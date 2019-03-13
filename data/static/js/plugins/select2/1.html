@@ -1,0 +1,19 @@
+<html>
+<head>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $("#b01").click(function(){
+  htmlobj=$.ajax({url:"/api/users/v1/users/",async:false});
+  $("#myDiv").html(htmlobj.responseText);
+  });
+});
+</script>
+</head>
+<body>
+
+<div id="myDiv"><h2>AJAX to bian</h2></div>
+<button id="b01" type="button">neirong</button>
+
+</body>
+</html>

@@ -1,0 +1,2 @@
+Sending mail error: [Errno -2] Name or service not known
+Task common.tasks.send_mail_async[274920af-bdd6-45c9-bc43-7619dc6891e0] succeeded in 0.056264220000230125s: None

@@ -1,0 +1,14 @@
+yousong_test
+Task deploy.tasks.deployjenkins[db17b64d-752a-4ebd-8651-ab77523cf231] raised unexpected: ValueError('Not a Queue URL: http://10.111.12.46/queue/item/9038/',)
+Traceback (most recent call last):
+  File "/opt/py3/lib/python3.6/site-packages/celery/app/trace.py", line 374, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/opt/py3/lib/python3.6/site-packages/celery/app/trace.py", line 629, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/opt/jumpserver/apps/deploy/tasks.py", line 32, in deployjenkins
+    server2.build_job(i,params={"host":"all"})
+  File "/opt/py3/lib/python3.6/site-packages/jenkinsapi/jenkins.py", line 170, in build_job
+    self[jobname].invoke(build_params=params or {})
+  File "/opt/py3/lib/python3.6/site-packages/jenkinsapi/job.py", line 215, in invoke
+    raise ValueError("Not a Queue URL: %s" % redirect_url)
+ValueError: Not a Queue URL: http://10.111.12.46/queue/item/9038/

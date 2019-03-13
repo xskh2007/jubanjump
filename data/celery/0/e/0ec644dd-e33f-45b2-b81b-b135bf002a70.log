@@ -1,0 +1,22 @@
+Failed request at http://10.111.12.46/api/python with params: {'tree': 'jobs[name,color,url]'} jobs[name,color,url]
+Task deploy.tasks.deployjenkins[0ec644dd-e33f-45b2-b81b-b135bf002a70] raised unexpected: HTTPError('401 Client Error: Invalid password/token for user: admin for url: http://10.111.12.46/api/python?tree=jobs%5Bname%2Ccolor%2Curl%5D',)
+Traceback (most recent call last):
+  File "/opt/py3/lib/python3.6/site-packages/celery/app/trace.py", line 374, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/opt/py3/lib/python3.6/site-packages/celery/app/trace.py", line 629, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/opt/jumpserver/apps/deploy/tasks.py", line 24, in deployjenkins
+    server2 = Jenkins2(jks_url, username, password)
+  File "/opt/py3/lib/python3.6/site-packages/jenkinsapi/jenkins.py", line 59, in __init__
+    JenkinsBase.__init__(self, baseurl, poll=not lazy)
+  File "/opt/py3/lib/python3.6/site-packages/jenkinsapi/jenkinsbase.py", line 35, in __init__
+    self.poll()
+  File "/opt/py3/lib/python3.6/site-packages/jenkinsapi/jenkinsbase.py", line 57, in poll
+    data = self._poll(tree=tree)
+  File "/opt/py3/lib/python3.6/site-packages/jenkinsapi/jenkins.py", line 64, in _poll
+    if not tree else tree)
+  File "/opt/py3/lib/python3.6/site-packages/jenkinsapi/jenkinsbase.py", line 81, in get_data
+    response.raise_for_status()
+  File "/opt/py3/lib/python3.6/site-packages/requests/models.py", line 935, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Invalid password/token for user: admin for url: http://10.111.12.46/api/python?tree=jobs%5Bname%2Ccolor%2Curl%5D

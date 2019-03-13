@@ -1,0 +1,81 @@
+Task deploy.tasks.deployjenkins[30116421-f43f-4d1f-8dae-5d177b220698] raised unexpected: ConnectionError(MaxRetryError('HTTPConnectionPool(host=\'10.111.12.46\', port=80): Max retries exceeded with url: /job/test02_06-ttms-order-server_07_ttms-server_08_ttms-finance-server_13_ttms-schedule/api/python?tree=allBuilds%5Bnumber%2Curl%5D (Caused by ReadTimeoutError("HTTPConnectionPool(host=\'10.111.12.46\', port=80): Read timed out. (read timeout=10)",))',),)
+Traceback (most recent call last):
+  File "/opt/py3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 387, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 2, in raise_from
+  File "/opt/py3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 383, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/local/lib/python3.6/http/client.py", line 1331, in getresponse
+    response.begin()
+  File "/usr/local/lib/python3.6/http/client.py", line 297, in begin
+    version, status, reason = self._read_status()
+  File "/usr/local/lib/python3.6/http/client.py", line 258, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/local/lib/python3.6/socket.py", line 586, in readinto
+    return self._sock.recv_into(b)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/py3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 601, in urlopen
+    chunked=chunked)
+  File "/opt/py3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 389, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/opt/py3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 309, in _raise_timeout
+    raise ReadTimeoutError(self, url, "Read timed out. (read timeout=%s)" % timeout_value)
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='10.111.12.46', port=80): Read timed out. (read timeout=10)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/py3/lib/python3.6/site-packages/requests/adapters.py", line 440, in send
+    timeout=timeout
+  File "/opt/py3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 639, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/opt/py3/lib/python3.6/site-packages/urllib3/util/retry.py", line 388, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='10.111.12.46', port=80): Max retries exceeded with url: /job/test02_06-ttms-order-server_07_ttms-server_08_ttms-finance-server_13_ttms-schedule/api/python?tree=allBuilds%5Bnumber%2Curl%5D (Caused by ReadTimeoutError("HTTPConnectionPool(host='10.111.12.46', port=80): Read timed out. (read timeout=10)",))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/py3/lib/python3.6/site-packages/celery/app/trace.py", line 374, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/opt/py3/lib/python3.6/site-packages/celery/app/trace.py", line 629, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/opt/jumpserver/apps/deploy/tasks.py", line 27, in deployjenkins
+    for i in joblists:
+  File "/opt/py3/lib/python3.6/site-packages/jenkinsapi/jobs.py", line 94, in iteritems
+    for job in self.itervalues():
+  File "/opt/py3/lib/python3.6/site-packages/jenkinsapi/jobs.py", line 126, in itervalues
+    yield Job(row['url'], row['name'], self.jenkins)
+  File "/opt/py3/lib/python3.6/site-packages/jenkinsapi/job.py", line 68, in __init__
+    JenkinsBase.__init__(self, self.url)
+  File "/opt/py3/lib/python3.6/site-packages/jenkinsapi/jenkinsbase.py", line 35, in __init__
+    self.poll()
+  File "/opt/py3/lib/python3.6/site-packages/jenkinsapi/job.py", line 94, in poll
+    self._data = self._add_missing_builds(self._data)
+  File "/opt/py3/lib/python3.6/site-packages/jenkinsapi/job.py", line 120, in _add_missing_builds
+    response = self.poll(tree='allBuilds[number,url]')
+  File "/opt/py3/lib/python3.6/site-packages/jenkinsapi/job.py", line 92, in poll
+    data = super(Job, self).poll(tree=tree)
+  File "/opt/py3/lib/python3.6/site-packages/jenkinsapi/jenkinsbase.py", line 57, in poll
+    data = self._poll(tree=tree)
+  File "/opt/py3/lib/python3.6/site-packages/jenkinsapi/jenkinsbase.py", line 67, in _poll
+    return self.get_data(url, tree=tree)
+  File "/opt/py3/lib/python3.6/site-packages/jenkinsapi/jenkinsbase.py", line 77, in get_data
+    response = requester.get_url(url, params)
+  File "/opt/py3/lib/python3.6/site-packages/jenkinsapi/utils/requester.py", line 111, in get_url
+    return requests.get(self._update_url_scheme(url), **requestKwargs)
+  File "/opt/py3/lib/python3.6/site-packages/requests/api.py", line 72, in get
+    return request('get', url, params=params, **kwargs)
+  File "/opt/py3/lib/python3.6/site-packages/requests/api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/opt/py3/lib/python3.6/site-packages/requests/sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/opt/py3/lib/python3.6/site-packages/requests/sessions.py", line 618, in send
+    r = adapter.send(request, **kwargs)
+  File "/opt/py3/lib/python3.6/site-packages/requests/adapters.py", line 508, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='10.111.12.46', port=80): Max retries exceeded with url: /job/test02_06-ttms-order-server_07_ttms-server_08_ttms-finance-server_13_ttms-schedule/api/python?tree=allBuilds%5Bnumber%2Curl%5D (Caused by ReadTimeoutError("HTTPConnectionPool(host='10.111.12.46', port=80): Read timed out. (read timeout=10)",))

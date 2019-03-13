@@ -1,0 +1,118 @@
+{% extends '_base_list.html' %}
+{% load i18n static %}
+{% block table_search %}
+
+{% endblock %}
+{% block table_container %}
+
+
+    <div class="row">
+        <div class="col-sm-3" onclick="deploy('yousong_test')">
+            <div class="ibox float-e-margins" with-border">
+                <div class="ibox-content" style="background:#0000ff">
+                    <span class="label label-success pull-right">online_a</span>
+                    <h5>一键发布A环境</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3"  onclick="deploy('yousong_test')">
+            <div class="ibox float-e-margins" >
+                <div class="ibox-content"style="background:#90EE90" >
+                    <span class="label label-info pull-right">online_b</span>
+                    <h5>一键发布B环境</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3"  onclick="deploy('yousong_test')">
+            <div class="ibox float-e-margins">
+                <div class="ibox-content">
+                    <span class="label label-primary pull-right">UAT</span>
+                    <h5>一键发布UAT环境</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br/>
+
+
+</div>
+
+
+
+<script>
+
+
+
+
+
+
+function deployonekey(props) {
+    // props = {url: .., body: , success: , error: , method: ,}
+    props = props || {};
+    var success_message = props.success_message || '更新成功!';
+    var fail_message = props.fail_message || '更新时发生未知错误.';
+    var flash_message = props.flash_message || true;
+    if (props.flash_message === false){
+        flash_message = false;
+    }
+
+    $.ajax({
+        url: props.url,
+        type: props.method || "PATCH",
+        data: props.body,
+        contentType: props.content_type || "application/json; charset=utf-8",
+        dataType: props.data_type || "json"
+    }).done(function(data, textStatue, jqXHR) {
+        if (flash_message) {
+            toastr.success(success_message);
+        }
+        if (typeof props.success === 'function') {
+            return props.success(data);
+        }
+    }).fail(function(jqXHR, textStatus, errorThrown) {
+        if (flash_message) {
+            toastr.error(fail_message);
+        }
+        if (typeof props.error === 'function') {
+            return props.error(jqXHR.responseText);
+        }
+    });
+  // return true;
+}
+
+
+     var the_url = "{% url 'deploy:deployonekey' %}";
+     function deploy(env) {
+            swal({
+                title: "{% trans 'Are you sure?' %}",
+                text: "一键发布环境所有项目",
+                type: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#DD6B55",
+                confirmButtonText: "{% trans 'Confirm' %}",
+                closeOnConfirm: false
+            }, function() {
+                var success = function() {
+                    var msg = "发布中，请前往jenkins查看进度";
+                    swal("一键发布环境所有项目", msg, "success");
+                };
+                var fail = function() {
+                    var msg = "{% trans 'User Deleting failed.' %}";
+                    swal("{% trans 'User Delete' %}", msg, "error");
+                };
+                var url_delete = the_url + '?env=' + env;
+                console.log(url_delete)
+                deployonekey({url: url_delete, method: 'GET',data_type:'html', success: success, error: fail});
+                jumpserver.checked = false;
+            });
+        }
+
+</script>>
+
+{% endblock %}
+{% block content_bottom_left %}{% endblock %}
+
+
+

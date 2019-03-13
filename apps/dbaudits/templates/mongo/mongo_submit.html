@@ -1,0 +1,130 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+{% load bootstrap3 %}
+
+{% block custom_head_css_js %}
+    <link href="{% static 'css/plugins/ztree/awesomeStyle/awesome.css' %}" rel="stylesheet">
+    <script type="text/javascript" src="{% static 'js/plugins/ztree/jquery.ztree.all.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/plugins/ztree/jquery.ztree.exhide.min.js' %}"></script>
+    <script src="{% static 'js/jquery.form.min.js' %}"></script>
+    <!--<script src="{% static 'js/plugins/xterm/xterm.js' %}"></script>-->
+    <!--<link rel="stylesheet" href="{% static 'js/plugins/xterm/xterm.css' %}" />-->
+    <!--<script src="{% static 'js/plugins/xterm/addons/fit/fit.js' %}"></script>-->
+    <script src="{% static 'js/plugins/codemirror/codemirror.js' %}"></script>
+    <script src="{% static 'js/plugins/codemirror/mode/javascript/javascript.js' %}"></script>
+    <link href="{% static 'css/plugins/codemirror/codemirror.css' %}" rel="stylesheet">
+    <link href="{% static 'css/plugins/codemirror/ambiance.css' %}" rel="stylesheet">
+    <link href="{% static 'css/plugins/select2/select2.min.css' %}" rel="stylesheet">
+    <script src="{% static 'js/plugins/select2/select2.full.min.js' %}"></script>
+	<style type="text/css">
+        .xterm .xterm-screen canvas {
+            position: absolute;
+            left: 0;
+            top: 0;
+            padding: 10px;
+        }
+        .select2-container .select2-selection--single {
+            height: 34px;
+        }
+	</style>
+{% endblock %}
+
+{% block content %}
+<div class="wrapper wrapper-content">
+   <div class="row">
+
+       <div class="col-lg-12 animated fadeInRight" id="split-right">
+           <div class="mail-box-header" style="padding-top: 5px;">
+               <form enctype="multipart/form-data" method="post" class="form-horizontal" action="" >
+
+                   {% csrf_token %}
+                   <div class="row">
+                       <div class="col-xs-3 col-sm-3">
+                        <select class="select2 form-control" id="dbname" name="dbname">
+
+                               <option value="qq">qq</option>
+                                <option value="ww">ww</option>
+                                <option value="ttms">ttms</option>
+
+                        </select>
+                       </div>
+                        <div class="col-xs-2 col-sm-2">
+                            <button type="submit" class="btn btn-primary btn-execute" >提交</button>
+                            <!--<input type=submit name="submit1" value="登陆" >-->
+                       </div>
+                       <div class="col-xs-6 col-sm-6">
+                       {% bootstrap_field form.title layout="horizontal" %}
+                       </div>
+                       <div class="input-group" style="height: 100%; width: 100%">
+                           <textarea class="form-control" id="script" name="script">qqq</textarea>
+                       </div>
+
+                   </div>
+
+
+                </form>
+           </div>
+       </div>
+   </div>
+</div>
+{% endblock %}
+
+{% block custom_foot_js %}
+<script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//function execute() {
+//    alert(editor.getValue());
+//}
+
+var editor;
+$(document).ready(function(){
+    systemUserId = $('#system-users-select').val();
+    $(".select2").select2({
+        dropdownAutoWidth : true,
+    }).on('select2:select', function(evt) {
+         var data = evt.params.data;
+         systemUserId = data.id;
+         initTree();
+    });
+    editor = CodeMirror.fromTextArea(document.getElementById("script"), {
+        lineNumbers: true,
+        lineWrapping: true,
+        mode: "javascript"
+    });
+    editor.setSize(800, 500);
+    var charWidth = editor.defaultCharWidth(), basePadding = 4;
+    editor.on("renderLine", function(cm, line, elt) {
+        var off = CodeMirror.countColumn(line.text, null, cm.getOption("tabSize")) * charWidth;
+        elt.style.textIndent = "-" + off + "px";
+        elt.style.paddingLeft = (basePadding + off) + "px";
+    });
+    editor.refresh();
+
+
+
+})
+
+
+    // .on('click', '.btn-execute', function () {
+    // execute()
+// })
+//               <!--<form enctype="multipart/form-data" method="post" class="form-horizontal" action="/api/dbaudits/v1/mongosubmit/" >-->
+
+
+</script>
+{% endblock %}

@@ -1,0 +1,93 @@
+{% extends '_base_list.html' %}
+{% load i18n static %}
+{% block table_search %}
+
+{% endblock %}
+{% block table_container %}
+<!--<div class="uc pull-left m-r-5"><a href="{% url "users:user-create" %}" class="btn btn-sm btn-primary"> {% trans "Create user" %} </a></div>-->
+<table class="table table-striped table-bordered table-hover " id="user_list_table" >
+    <thead>
+        <tr>
+            <th class="text-center">
+                <input id="" type="checkbox" class="ipt_check_all">
+            </th>
+            <th class="text-center">数据库名</th>
+            <th class="text-center">用户名</th>
+            <th class="text-center">标题</th>
+            <th class="text-center">状态</th>
+            <th class="text-center">提交时间</th>
+            <th class="text-center">开始时间</th>
+            <th class="text-center">结束时间</th>
+            <th class="text-center">动作</th>
+
+        </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+
+
+{% endblock %}
+{% block content_bottom_left %}{% endblock %}
+{% block custom_foot_js %}
+<script src="{% static 'js/jquery.form.min.js' %}"></script>
+<script>
+
+function initTable() {
+     var options = {
+        ele: $('#user_list_table'),
+        columnDefs: [{targets: 8, createdCell: function (td, cellData, rowData) {
+                var execute_btn = '<a class="btn btn-xs btn-danger m-l-xs btn_mongo_delete" data-uid="{{ DEFAULT_PK }}" >执行</a>'.replace('{{ DEFAULT_PK }}', cellData);
+                var refuse_btn = '<a class="btn btn-xs btn-danger m-l-xs btn_mongo_delete" data-uid="{{ DEFAULT_PK }}" >拒绝</a>'.replace('{{ DEFAULT_PK }}', cellData);
+                var del_btn = '<a class="btn btn-xs btn-danger m-l-xs btn_mongo_delete" data-uid="{{ DEFAULT_PK }}" >删除</a>'.replace('{{ DEFAULT_PK }}', cellData);
+
+                $(td).html(execute_btn+refuse_btn+del_btn)
+             }}
+            ],
+        ajax_url: '{% url "api-dbaudits:mongosubmit-list" %}',
+        columns: [
+           {data: "id" }, {data: "dbname" },{data: "created_by" },
+           {data: "title" },{data: "status" },{data: "date_created" },
+            {data: "date_start" },{data: "date_finished" },{data: "id" }
+
+        ],
+        op_html: $('#actions').html()
+    };
+    var table = jumpserver.initServerSideDataTable(options);
+    return table;
+}
+
+$(document).ready(function(){
+    // alert('{% url "api-users:user-list" %}')
+    // alert('{% url "api-dbaudits:mongosubmit-list" %}')
+    var table = initTable();
+    var fields = $('#fm_user_bulk_update .form-group');
+    $.each(fields, function (index, value) {
+        console.log(value)
+    });
+
+
+
+
+}).on('click', '.btn_mongo_delete', function(){
+    // alert("okkk")
+    var $this = $(this);
+    var name = $this.data('title');
+    var uid = $this.data('uid');
+    // alert($this.data('title')+$this.data('uid'));
+    // alert('{% url "api-dbaudits:mongosubmit-detail" pk=DEFAULT_PK %}'.replace("{{ DEFAULT_PK }}", uid))
+    var the_url = '{% url "api-dbaudits:mongosubmit-detail" pk=DEFAULT_PK %}'.replace("{{ DEFAULT_PK }}", uid);
+    objectDelete($this, name, the_url);
+}).on('click', '.expired', function () {
+    var msg = '{% trans "User is expired" %}';
+    toastr.error(msg)
+}).on('click', '.inactive', function () {
+    var msg = '{% trans 'User is inactive' %}';
+    toastr.error(msg)
+
+})
+
+
+</script>
+{% endblock %}
+
