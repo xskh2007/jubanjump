@@ -32,14 +32,51 @@
 {% block custom_foot_js %}
 <script src="{% static 'js/jquery.form.min.js' %}"></script>
 <script>
+ ////////  调用执行mongo脚本的js
+
+function myexecute(props) {
+    // props = {url: .., body: , success: , error: , method: ,}
+    props = props || {};
+    var success_message = props.success_message || '更新成功!';
+    var fail_message = props.fail_message || '更新时发生未知错误.';
+    var flash_message = props.flash_message || true;
+    if (props.flash_message === false){
+        flash_message = false;
+    }
+
+    $.ajax({
+        url: props.url,
+        type: props.method || "PATCH",
+        data: props.body,
+        contentType: props.content_type || "application/json; charset=utf-8",
+        dataType: props.data_type || "json"
+    }).done(function(data, textStatue, jqXHR) {
+        if (flash_message) {
+            toastr.success(success_message);
+        }
+        if (typeof props.success === 'function') {
+            return props.success(data);
+        }
+    }).fail(function(jqXHR, textStatus, errorThrown) {
+        if (flash_message) {
+            toastr.error(fail_message);
+        }
+        if (typeof props.error === 'function') {
+            return props.error(jqXHR.responseText);
+        }
+    });
+  // return true;
+}
+
+
 
 function initTable() {
      var options = {
         ele: $('#user_list_table'),
         columnDefs: [{targets: 8, createdCell: function (td, cellData, rowData) {
-                var execute_btn = '<a class="btn btn-xs btn-danger m-l-xs btn_mongo_delete" data-uid="{{ DEFAULT_PK }}" >执行</a>'.replace('{{ DEFAULT_PK }}', cellData);
-                var refuse_btn = '<a class="btn btn-xs btn-danger m-l-xs btn_mongo_delete" data-uid="{{ DEFAULT_PK }}" >拒绝</a>'.replace('{{ DEFAULT_PK }}', cellData);
-                var del_btn = '<a class="btn btn-xs btn-danger m-l-xs btn_mongo_delete" data-uid="{{ DEFAULT_PK }}" >删除</a>'.replace('{{ DEFAULT_PK }}', cellData);
+                var execute_btn = '<a class="btn btn-xs btn-danger m-l-xs btn_mongoexecute" data-uid="{{ DEFAULT_PK }}" data-title="dbtitle">执行</a>'.replace('{{ DEFAULT_PK }}', cellData).replace('dbtitle', rowData.title);
+                var refuse_btn = '<a class="btn btn-xs btn-danger m-l-xs btn_mongo_delete" data-uid="{{ DEFAULT_PK }}" data-title="dbtitle">拒绝</a>'.replace('{{ DEFAULT_PK }}', cellData).replace('dbtitle', rowData.title);
+                var del_btn = '<a class="btn btn-xs btn-danger m-l-xs btn_mongo_delete" data-uid="{{ DEFAULT_PK }}" data-title="dbtitle">删除</a>'.replace('{{ DEFAULT_PK }}', cellData).replace('dbtitle', rowData.title);
 
                 $(td).html(execute_btn+refuse_btn+del_btn)
              }}
@@ -85,7 +122,51 @@ $(document).ready(function(){
     var msg = '{% trans 'User is inactive' %}';
     toastr.error(msg)
 
+}).on('click', '.btn_mongoexecute', function(){
+    var $this = $(this);
+    var name = $this.data('title');
+
+    var uid = $this.data('uid');
+    // console.log(name);
+    // var the_url = '{% url "api-users:user-detail" pk=DEFAULT_PK %}'.replace("{{ DEFAULT_PK }}", uid);
+    var the_url = "{% url 'api-dbaudits:mongo-execute' %}"+ '?uid=' + uid;
+    // alert(the_url)
+    mongoexecute($this, name, the_url);
+    // jumpserver.checked = false;
 })
+
+
+
+
+
+
+     // function mongoexecute2(uuid) {
+     //        var the_url = "{% url 'api-dbaudits:mongo-execute' %}";
+     //        swal({
+     //            title: "{% trans 'Are you sure?' %}",
+     //            text: "执行该mongo脚本",
+     //            type: "warning",
+     //            showCancelButton: true,
+     //            confirmButtonColor: "#DD6B55",
+     //            confirmButtonText: "{% trans 'Confirm' %}",
+     //            closeOnConfirm: false
+     //        }, function() {
+     //            var success = function() {
+     //                var msg = "执行中...";
+     //                swal("执行该mongo脚本", msg, "success");
+     //            };
+     //            var fail = function() {
+     //                var msg = "{% trans 'User Deleting failed.' %}";
+     //                swal("{% trans 'User Delete' %}", msg, "error");
+     //            };
+     //            var mongoexecute_url = the_url + '?uuid=' + uuid;
+     //            console.log(mongoexecute_url);
+     //            // alert($this.data('uid'));
+     //            myexecute({url: mongoexecute_url, method: 'GET',data_type:'html', success: success, error: fail});
+     //            jumpserver.checked = false;
+     //        });
+     //    }
+
 
 
 </script>

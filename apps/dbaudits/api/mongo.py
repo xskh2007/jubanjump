@@ -15,7 +15,7 @@ from rest_framework.pagination import LimitOffsetPagination
 from common.permissions import AdminUserRequiredMixin
 from django.views.generic import ListView, DetailView, TemplateView,View
 from django.http import HttpResponse
-
+from ..tasks import mongoexecute
 
 
 class MongoSubmitViewSet(IDInFilterMixin, BulkModelViewSet):
@@ -42,11 +42,11 @@ class MongoSubmitViewSet(IDInFilterMixin, BulkModelViewSet):
 
 class MongoExecuteView(AdminUserRequiredMixin, View):
     def get(self, request):
-        print(request.GET.get("env"))
-        env = request.GET.get("env")
-        # deployjenkins.delay(env)
+        print(request.GET.get("uid"))
+        uid = request.GET.get("uid")
+        mongoexecute.delay(uid)
 
         msg = """
         deploy ing ...
         """
-        return HttpResponse(msg)
+        return HttpResponse(0)

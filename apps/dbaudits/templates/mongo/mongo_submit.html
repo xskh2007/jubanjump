@@ -99,7 +99,7 @@ $(document).ready(function(){
     }).on('select2:select', function(evt) {
          var data = evt.params.data;
          systemUserId = data.id;
-         initTree();
+         // initTree();
     });
     editor = CodeMirror.fromTextArea(document.getElementById("script"), {
         lineNumbers: true,

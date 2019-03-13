@@ -13,6 +13,9 @@ from celery import shared_task
 def deployjenkins1():
     print("deploying.....")
 
+@shared_task
+def mongoexecute(uid):
+    print(uid+"1111111111111")
 
 @shared_task
 def deployjenkins(env):

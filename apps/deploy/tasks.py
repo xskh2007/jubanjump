@@ -15,6 +15,7 @@ password="887113"
 
 @shared_task
 def deployjenkins1():
+    time.sleep(30)
     print("deploying.....")
 
 

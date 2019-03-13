@@ -298,6 +298,80 @@ function APIUpdateAttr(props) {
   // return true;
 }
 
+
+// my api add by qiantu
+//
+// function myapiAttr(props) {
+//     // props = {url: .., body: , success: , error: , method: ,}
+//     props = props || {};
+//     var success_message = props.success_message || '更新成功!';
+//     var fail_message = props.fail_message || '更新时发生未知错误.';
+//     var flash_message = props.flash_message || true;
+//     if (props.flash_message === false){
+//         flash_message = false;
+//     }
+//
+//     $.ajax({
+//         url: props.url,
+//         type: props.method || "PATCH",
+//         data: props.body,
+//         contentType: props.content_type || "application/json; charset=utf-8",
+//         dataType: props.data_type || "json"
+//     }).done(function(data, textStatue, jqXHR) {
+//         if (flash_message) {
+//             toastr.success(success_message);
+//         }
+//         if (typeof props.success === 'function') {
+//             return props.success(data);
+//         }
+//     }).fail(function(jqXHR, textStatus, errorThrown) {
+//         if (flash_message) {
+//             toastr.error(fail_message);
+//         }
+//         if (typeof props.error === 'function') {
+//             return props.error(jqXHR.responseText);
+//         }
+//     });
+//   // return true;
+// }
+
+
+// Sweet Alert for mongoexecute
+function mongoexecute(obj, name, url) {
+    function doexecute() {
+        var body = {};
+        var success = function() {
+            // swal('Deleted!', "[ "+name+"]"+" has been deleted ", "success");
+            var msg = "数据库脚本执行中";
+            swal("数据库脚本执行中", msg, "success");
+        };
+        var fail = function() {
+            // swal("错误", "删除"+"[ "+name+" ]"+"遇到错误", "error");
+            swal(gettext('Error'), "[ "+name+" ]" + gettext("Being used by the asset, please unbind the asset first."), "error");
+        };
+        APIUpdateAttr({
+            url: url,
+            body: JSON.stringify(body),
+            method: 'GET',
+            success_message: gettext("Delete the success"),
+            success: success,
+            error: fail
+        });
+    }
+    swal({
+        title: gettext('Are you sure about deleting it?'),
+        text: " [" + name + "] ",
+        type: "warning",
+        showCancelButton: true,
+        cancelButtonText: gettext('Cancel'),
+        confirmButtonColor: "#ed5565",
+        confirmButtonText: gettext('Confirm'),
+        closeOnConfirm: true,
+    }, function () {
+        doexecute()
+    });
+}
+
 // Sweet Alert for Delete
 function objectDelete(obj, name, url, redirectTo) {
     function doDelete() {

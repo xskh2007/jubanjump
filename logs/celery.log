@@ -6258,3 +6258,1043 @@ Received task: terminal.tasks.clean_orphan_session[8015849b-4d93-48b2-9d7c-1a34c
 Task terminal.tasks.clean_orphan_session[8015849b-4d93-48b2-9d7c-1a34cc517e78] succeeded in 0.018132978002540767s: None
 Received task: terminal.tasks.clean_orphan_session[41980c4f-4037-4c2a-89fa-0a48be7ee987]  
 Task terminal.tasks.clean_orphan_session[41980c4f-4037-4c2a-89fa-0a48be7ee987] succeeded in 0.008679617996676825s: None
+Received task: terminal.tasks.clean_orphan_session[ef374865-2431-472e-b2f4-11465ba3e803]  
+Task terminal.tasks.clean_orphan_session[ef374865-2431-472e-b2f4-11465ba3e803] succeeded in 0.008463482008664869s: None
+Received task: terminal.tasks.clean_orphan_session[71af9332-cbfe-42b7-a3e0-4b1c85186082]  
+Task terminal.tasks.clean_orphan_session[71af9332-cbfe-42b7-a3e0-4b1c85186082] succeeded in 0.008601964000263251s: None
+Connected to redis://127.0.0.1:6379/3
+mingle: searching for neighbors
+mingle: all alone
+celery@localhost.localdomain ready.
+Received task: users.tasks.check_password_expired_periodic[e302a12d-34fc-4b42-add6-a31624728225]  
+Received task: ops.tasks.create_or_update_registered_periodic_tasks[361425ee-5b01-4976-b4b0-ce8cca282d7d]  
+Received task: terminal.tasks.delete_terminal_status_period[d2938a14-78ab-4bc9-b355-49ba4ec3b436]  
+Received task: terminal.tasks.clean_orphan_session[b97ec21f-9a61-4a33-809d-b491a5442cde]  
+Received task: terminal.tasks.clean_expired_session_period[fcf29f1e-94af-4908-804f-13fb1262d85b]  
+Scaling up 1 processes.
+Task terminal.tasks.delete_terminal_status_period[d2938a14-78ab-4bc9-b355-49ba4ec3b436] succeeded in 0.01816465899173636s: None
+Task terminal.tasks.clean_orphan_session[b97ec21f-9a61-4a33-809d-b491a5442cde] succeeded in 0.03727289800008293s: None
+Task users.tasks.check_password_expired_periodic[e302a12d-34fc-4b42-add6-a31624728225] succeeded in 0.22817817599570844s: None
+fcf29f1e-94af-4908-804f-13fb1262d85b terminal.tasks.clean_expired_session_period Start clean expired session record, commands and replay
+Task terminal.tasks.clean_expired_session_period[fcf29f1e-94af-4908-804f-13fb1262d85b] succeeded in 0.06932842599053401s: None
+Task ops.tasks.create_or_update_registered_periodic_tasks[361425ee-5b01-4976-b4b0-ce8cca282d7d] succeeded in 0.36630788499314804s: None
+Scaling down 1 processes.
+Received task: assets.tasks.test_admin_user_connectivity_period[c9cd434a-a21f-461b-8d52-bace9e5d7058]  
+Task assets.tasks.test_admin_user_connectivity_period[c9cd434a-a21f-461b-8d52-bace9e5d7058] succeeded in 0.007827044013538398s: None
+Received task: terminal.tasks.clean_orphan_session[f4486220-8dac-4247-a720-b984bacdb524]  
+Task terminal.tasks.clean_orphan_session[f4486220-8dac-4247-a720-b984bacdb524] succeeded in 0.006684187988867052s: None
+Received task: terminal.tasks.clean_orphan_session[2a6d7796-9d30-41c0-b1cd-0e3e15853afe]  
+Task terminal.tasks.clean_orphan_session[2a6d7796-9d30-41c0-b1cd-0e3e15853afe] succeeded in 0.008352519012987614s: None
+Received task: terminal.tasks.clean_orphan_session[92565433-c243-42ae-b147-e618e6e8019a]  
+Task terminal.tasks.clean_orphan_session[92565433-c243-42ae-b147-e618e6e8019a] succeeded in 0.007887684012530372s: None
+Received task: terminal.tasks.clean_orphan_session[ef7f478b-b475-43a1-bb5c-e8e8e8fe1029]  
+Task terminal.tasks.clean_orphan_session[ef7f478b-b475-43a1-bb5c-e8e8e8fe1029] succeeded in 0.009592617003363557s: None
+Received task: terminal.tasks.clean_orphan_session[0bb387c3-e6d4-4072-82c8-280b5ed25054]  
+Task terminal.tasks.clean_orphan_session[0bb387c3-e6d4-4072-82c8-280b5ed25054] succeeded in 0.008465763996355236s: None
+Received task: terminal.tasks.delete_terminal_status_period[afe59483-5e4d-4711-afe6-70b658211e8c]  
+Task terminal.tasks.delete_terminal_status_period[afe59483-5e4d-4711-afe6-70b658211e8c] succeeded in 0.021278508007526398s: None
+Received task: terminal.tasks.clean_orphan_session[e44edaf8-f56f-4b38-bda1-ddf8ae116ad2]  
+Task terminal.tasks.clean_orphan_session[e44edaf8-f56f-4b38-bda1-ddf8ae116ad2] succeeded in 0.007114282008842565s: None
+Received task: assets.tasks.test_admin_user_connectivity_period[29bffbf6-5299-4c21-b108-197f84d39da1]  
+Task assets.tasks.test_admin_user_connectivity_period[29bffbf6-5299-4c21-b108-197f84d39da1] succeeded in 0.009157555003184825s: None
+Received task: terminal.tasks.clean_orphan_session[d6ea89bd-b388-4e72-8a4b-a9235b1330fc]  
+Task terminal.tasks.clean_orphan_session[d6ea89bd-b388-4e72-8a4b-a9235b1330fc] succeeded in 0.010191248002229258s: None
+Received task: dbaudits.tasks.mongoexecute[7b17d830-465f-4f9a-9bc5-f3698af02a91]  
+mongoexecute.....
+Task dbaudits.tasks.mongoexecute[7b17d830-465f-4f9a-9bc5-f3698af02a91] succeeded in 0.0036294259916758165s: None
+Received task: terminal.tasks.clean_orphan_session[9b105ed5-7a53-465b-99fc-e6f8c960b1b4]  
+Task terminal.tasks.clean_orphan_session[9b105ed5-7a53-465b-99fc-e6f8c960b1b4] succeeded in 0.016419530991697684s: None
+Received task: terminal.tasks.clean_orphan_session[b90c14c3-5719-438d-b335-c58e4f02d3d4]  
+Task terminal.tasks.clean_orphan_session[b90c14c3-5719-438d-b335-c58e4f02d3d4] succeeded in 0.008369243994820863s: None
+Received task: terminal.tasks.clean_orphan_session[8b1829bc-e30b-45ac-85e3-324da67a2cce]  
+Task terminal.tasks.clean_orphan_session[8b1829bc-e30b-45ac-85e3-324da67a2cce] succeeded in 0.007562649989267811s: None
+Received task: terminal.tasks.clean_orphan_session[c2ca6772-38ef-4557-9ee0-39e9dce59ef7]  
+Task terminal.tasks.clean_orphan_session[c2ca6772-38ef-4557-9ee0-39e9dce59ef7] succeeded in 0.033905207994394004s: None
+Received task: assets.tasks.test_admin_user_connectivity_period[81ed8761-8fdf-40a5-8fc7-8d0f99e26c02]  
+Received task: terminal.tasks.delete_terminal_status_period[aff4db7f-7a92-4ba6-94a2-d1562709c868]  
+Task assets.tasks.test_admin_user_connectivity_period[81ed8761-8fdf-40a5-8fc7-8d0f99e26c02] succeeded in 0.020816046991967596s: None
+Task terminal.tasks.delete_terminal_status_period[aff4db7f-7a92-4ba6-94a2-d1562709c868] succeeded in 0.020652930994401686s: None
+Received task: terminal.tasks.clean_orphan_session[f6a189ce-3505-4ba2-b823-06a968cf3265]  
+Task terminal.tasks.clean_orphan_session[f6a189ce-3505-4ba2-b823-06a968cf3265] succeeded in 0.03652365099696908s: None
+Received task: terminal.tasks.clean_orphan_session[eede57ca-233a-465d-965c-b23c2f2d0f9a]  
+Task terminal.tasks.clean_orphan_session[eede57ca-233a-465d-965c-b23c2f2d0f9a] succeeded in 0.021886323011131026s: None
+Received task: terminal.tasks.clean_orphan_session[073197bc-2a91-4838-917c-e55827d266d8]  
+Task terminal.tasks.clean_orphan_session[073197bc-2a91-4838-917c-e55827d266d8] succeeded in 0.02426490798825398s: None
+Received task: terminal.tasks.clean_orphan_session[368d4e7c-6101-417e-b69b-ace1ae9e7e93]  
+Task terminal.tasks.clean_orphan_session[368d4e7c-6101-417e-b69b-ace1ae9e7e93] succeeded in 0.008579588000429794s: None
+Received task: terminal.tasks.clean_orphan_session[2b03230c-6849-4f8d-b2eb-9219413989b6]  
+Task terminal.tasks.clean_orphan_session[2b03230c-6849-4f8d-b2eb-9219413989b6] succeeded in 0.06296199599455576s: None
+Connected to redis://127.0.0.1:6379/3
+mingle: searching for neighbors
+mingle: all alone
+celery@localhost.localdomain ready.
+Received task: users.tasks.check_password_expired_periodic[9c7f28f3-13cc-4961-bba1-4e18e3c31de5]  
+Received task: ops.tasks.create_or_update_registered_periodic_tasks[ce926715-fe2a-4123-b720-39def33ed180]  
+Received task: terminal.tasks.delete_terminal_status_period[aeac2393-34ab-4d44-9177-c0bc8d5f14bb]  
+Received task: terminal.tasks.clean_orphan_session[8379df28-c538-4c72-aadf-eb85b4aa1c9d]  
+Received task: terminal.tasks.clean_expired_session_period[1183a519-2ef4-4c22-80d6-dbe1652dee08]  
+Scaling up 1 processes.
+Task terminal.tasks.clean_orphan_session[8379df28-c538-4c72-aadf-eb85b4aa1c9d] succeeded in 0.2753934169886634s: None
+Task terminal.tasks.delete_terminal_status_period[aeac2393-34ab-4d44-9177-c0bc8d5f14bb] succeeded in 0.3306274780043168s: None
+Task users.tasks.check_password_expired_periodic[9c7f28f3-13cc-4961-bba1-4e18e3c31de5] succeeded in 0.4877613730059238s: None
+1183a519-2ef4-4c22-80d6-dbe1652dee08 terminal.tasks.clean_expired_session_period Start clean expired session record, commands and replay
+Task terminal.tasks.clean_expired_session_period[1183a519-2ef4-4c22-80d6-dbe1652dee08] succeeded in 0.11143360999994911s: None
+Task ops.tasks.create_or_update_registered_periodic_tasks[ce926715-fe2a-4123-b720-39def33ed180] succeeded in 0.9149491309945006s: None
+Received task: users.tasks.write_login_log_async[0900466e-f50a-4012-a0ca-d39f889acc21]  
+Task users.tasks.write_login_log_async[0900466e-f50a-4012-a0ca-d39f889acc21] succeeded in 4.257254891999764s: None
+Connected to redis://127.0.0.1:6379/3
+mingle: searching for neighbors
+mingle: all alone
+celery@localhost.localdomain ready.
+Received task: users.tasks.check_password_expired_periodic[ce8fca17-1b29-41ae-a962-e16dd24b1ad7]  
+Received task: ops.tasks.create_or_update_registered_periodic_tasks[3f5800be-e9b8-40f4-a3e2-4db9c8bb270e]  
+Received task: terminal.tasks.delete_terminal_status_period[34dac5ab-a6a3-4d17-a087-69e51a017e60]  
+Received task: terminal.tasks.clean_orphan_session[53609ebd-d112-4653-9fdb-2e2f02d0e74f]  
+Received task: terminal.tasks.clean_expired_session_period[d55c92d0-7ba3-4088-a34c-13be58a7d0bb]  
+Scaling up 1 processes.
+Task terminal.tasks.delete_terminal_status_period[34dac5ab-a6a3-4d17-a087-69e51a017e60] succeeded in 0.0857459020044189s: None
+Task terminal.tasks.clean_orphan_session[53609ebd-d112-4653-9fdb-2e2f02d0e74f] succeeded in 0.10022218599624466s: None
+Task users.tasks.check_password_expired_periodic[ce8fca17-1b29-41ae-a962-e16dd24b1ad7] succeeded in 0.3219564120081486s: None
+d55c92d0-7ba3-4088-a34c-13be58a7d0bb terminal.tasks.clean_expired_session_period Start clean expired session record, commands and replay
+Task terminal.tasks.clean_expired_session_period[d55c92d0-7ba3-4088-a34c-13be58a7d0bb] succeeded in 0.08827232099429239s: None
+Task ops.tasks.create_or_update_registered_periodic_tasks[3f5800be-e9b8-40f4-a3e2-4db9c8bb270e] succeeded in 0.42348084699187893s: None
+Received task: deploy.tasks.deployjenkins[aaad5b81-a0c3-4022-b857-bf9c391cb19d]  
+Scaling down 1 processes.
+Task deploy.tasks.deployjenkins[aaad5b81-a0c3-4022-b857-bf9c391cb19d] raised unexpected: TypeError('must be str, not NoneType',)
+Traceback (most recent call last):
+  File "/opt/py3/lib/python3.6/site-packages/celery/app/trace.py", line 374, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/opt/py3/lib/python3.6/site-packages/celery/app/trace.py", line 629, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/opt/jumpserver/apps/deploy/tasks.py", line 28, in deployjenkins
+    if i[0].find(env)>=0:
+TypeError: must be str, not NoneType
+Connected to redis://127.0.0.1:6379/3
+mingle: searching for neighbors
+mingle: all alone
+celery@localhost.localdomain ready.
+Received task: users.tasks.check_password_expired_periodic[4fb3bd4e-37ec-4469-93cd-e8828b77d02f]  
+Received task: ops.tasks.create_or_update_registered_periodic_tasks[5f4770a2-047b-40e8-b492-48379a4538d1]  
+Received task: terminal.tasks.delete_terminal_status_period[2fd28c16-c17e-4436-b9fe-99c7be11d950]  
+Received task: terminal.tasks.clean_orphan_session[8cb26400-36d4-4066-8e2b-1838a6db5378]  
+Received task: terminal.tasks.clean_expired_session_period[b82905dc-38a5-421b-baff-eddbf10f55c1]  
+Scaling up 1 processes.
+Task terminal.tasks.delete_terminal_status_period[2fd28c16-c17e-4436-b9fe-99c7be11d950] succeeded in 0.11762033600825816s: None
+Task users.tasks.check_password_expired_periodic[4fb3bd4e-37ec-4469-93cd-e8828b77d02f] succeeded in 0.319700478008599s: None
+b82905dc-38a5-421b-baff-eddbf10f55c1 terminal.tasks.clean_expired_session_period Start clean expired session record, commands and replay
+Task terminal.tasks.clean_orphan_session[8cb26400-36d4-4066-8e2b-1838a6db5378] succeeded in 0.028469771990785375s: None
+Task terminal.tasks.clean_expired_session_period[b82905dc-38a5-421b-baff-eddbf10f55c1] succeeded in 0.056041735006147064s: None
+Task ops.tasks.create_or_update_registered_periodic_tasks[5f4770a2-047b-40e8-b492-48379a4538d1] succeeded in 0.5151202029956039s: None
+Received task: dbaudits.tasks.mongoexecute[a9b1a1e9-2d83-4013-b728-8dda348ba965]  
+mongoexecute.....
+Task dbaudits.tasks.mongoexecute[a9b1a1e9-2d83-4013-b728-8dda348ba965] succeeded in 0.05602267298672814s: None
+Scaling down 1 processes.
+Connected to redis://127.0.0.1:6379/3
+mingle: searching for neighbors
+mingle: all alone
+celery@localhost.localdomain ready.
+Received task: users.tasks.check_password_expired_periodic[3795c8a9-1942-4317-ad78-31dbf8240fef]  
+Received task: ops.tasks.create_or_update_registered_periodic_tasks[72ff63f1-04c1-452e-8aaf-2f62547b3887]  
+Received task: terminal.tasks.delete_terminal_status_period[90f69947-8857-43b0-9f5a-b1a563b958c6]  
+Received task: terminal.tasks.clean_orphan_session[93484031-f3fe-4b9e-8c19-93bd779ea350]  
+Received task: terminal.tasks.clean_expired_session_period[3c21b8de-eeca-4709-8608-db43a6ca861e]  
+Scaling up 1 processes.
+Task terminal.tasks.delete_terminal_status_period[90f69947-8857-43b0-9f5a-b1a563b958c6] succeeded in 0.06991540499438997s: None
+Task terminal.tasks.clean_orphan_session[93484031-f3fe-4b9e-8c19-93bd779ea350] succeeded in 0.06843562400899827s: None
+Task users.tasks.check_password_expired_periodic[3795c8a9-1942-4317-ad78-31dbf8240fef] succeeded in 0.1155503259942634s: None
+3c21b8de-eeca-4709-8608-db43a6ca861e terminal.tasks.clean_expired_session_period Start clean expired session record, commands and replay
+Task terminal.tasks.clean_expired_session_period[3c21b8de-eeca-4709-8608-db43a6ca861e] succeeded in 0.10645881599339191s: None
+Task ops.tasks.create_or_update_registered_periodic_tasks[72ff63f1-04c1-452e-8aaf-2f62547b3887] succeeded in 0.48621061599988025s: None
+Scaling down 1 processes.
+Received task: dbaudits.tasks.mongoexecute[5085d1da-cfbb-4ff3-bc9e-2dfd17fb1520]  
+yousong_test
+Task dbaudits.tasks.mongoexecute[5085d1da-cfbb-4ff3-bc9e-2dfd17fb1520] succeeded in 0.002882449989556335s: None
+Received task: assets.tasks.test_admin_user_connectivity_period[5a62e4ec-82fa-48fb-a050-ce789a4df7bc]  
+Task assets.tasks.test_admin_user_connectivity_period[5a62e4ec-82fa-48fb-a050-ce789a4df7bc] succeeded in 0.04810082199401222s: None
+Received task: terminal.tasks.clean_orphan_session[eb8f3982-ab41-4dd4-90a1-22964c765f80]  
+Task terminal.tasks.clean_orphan_session[eb8f3982-ab41-4dd4-90a1-22964c765f80] succeeded in 0.0534694209927693s: None
+Received task: dbaudits.tasks.mongoexecute[2d679271-ebb1-4dc5-b676-4c9e7e1e7b4b]  
+yousong_test
+Task dbaudits.tasks.mongoexecute[2d679271-ebb1-4dc5-b676-4c9e7e1e7b4b] succeeded in 0.0028750909987138584s: None
+Connected to redis://127.0.0.1:6379/3
+mingle: searching for neighbors
+mingle: all alone
+celery@localhost.localdomain ready.
+Received task: users.tasks.check_password_expired_periodic[d295d069-e8d7-43ba-b5b0-5b9bc12f7589]  
+Received task: ops.tasks.create_or_update_registered_periodic_tasks[a4ca242a-e2e7-4fe4-b133-68bff87643d5]  
+Received task: terminal.tasks.delete_terminal_status_period[ab71b08e-3170-4521-a41c-4f9dfab416f0]  
+Received task: terminal.tasks.clean_orphan_session[952947dd-7561-4afa-820d-ad6f55051f01]  
+Task terminal.tasks.delete_terminal_status_period[ab71b08e-3170-4521-a41c-4f9dfab416f0] succeeded in 0.02929469100490678s: None
+Received task: terminal.tasks.clean_expired_session_period[2a0286cc-9852-40ee-868f-5cb18f204c20]  
+Scaling up 1 processes.
+Task terminal.tasks.clean_orphan_session[952947dd-7561-4afa-820d-ad6f55051f01] succeeded in 0.05330363199755084s: None
+Task users.tasks.check_password_expired_periodic[d295d069-e8d7-43ba-b5b0-5b9bc12f7589] succeeded in 0.10791468899697065s: None
+2a0286cc-9852-40ee-868f-5cb18f204c20 terminal.tasks.clean_expired_session_period Start clean expired session record, commands and replay
+Task terminal.tasks.clean_expired_session_period[2a0286cc-9852-40ee-868f-5cb18f204c20] succeeded in 0.029214637994300574s: None
+Task ops.tasks.create_or_update_registered_periodic_tasks[a4ca242a-e2e7-4fe4-b133-68bff87643d5] succeeded in 0.3413215710024815s: None
+Connected to redis://127.0.0.1:6379/3
+mingle: searching for neighbors
+mingle: all alone
+celery@localhost.localdomain ready.
+Received task: users.tasks.check_password_expired_periodic[fff0e027-5f3d-4be2-abe7-54373384d480]  
+Received task: ops.tasks.create_or_update_registered_periodic_tasks[b75f7666-5928-4f1c-b710-87ce7e85593d]  
+Received task: terminal.tasks.delete_terminal_status_period[74287918-d570-4132-a14f-d3d02b9d2d0f]  
+Received task: terminal.tasks.clean_orphan_session[5ff1f096-5d49-40cf-8b8c-956f96a504ff]  
+Received task: terminal.tasks.clean_expired_session_period[d920c69a-20ce-4e07-9be4-10013ca7616f]  
+Scaling up 1 processes.
+Task terminal.tasks.clean_orphan_session[5ff1f096-5d49-40cf-8b8c-956f96a504ff] succeeded in 0.03875294799217954s: None
+Task terminal.tasks.delete_terminal_status_period[74287918-d570-4132-a14f-d3d02b9d2d0f] succeeded in 0.11147486900154036s: None
+Task users.tasks.check_password_expired_periodic[fff0e027-5f3d-4be2-abe7-54373384d480] succeeded in 0.155457633009064s: None
+d920c69a-20ce-4e07-9be4-10013ca7616f terminal.tasks.clean_expired_session_period Start clean expired session record, commands and replay
+Task terminal.tasks.clean_expired_session_period[d920c69a-20ce-4e07-9be4-10013ca7616f] succeeded in 0.02222682700084988s: None
+Task ops.tasks.create_or_update_registered_periodic_tasks[b75f7666-5928-4f1c-b710-87ce7e85593d] succeeded in 0.3747162549989298s: None
+Received task: dbaudits.tasks.mongoexecute[cbae6e58-016e-48c5-8773-3b1d71e613a0]  
+yousong_test
+Task dbaudits.tasks.mongoexecute[cbae6e58-016e-48c5-8773-3b1d71e613a0] succeeded in 0.023226541001349688s: None
+Scaling down 1 processes.
+Connected to redis://127.0.0.1:6379/3
+mingle: searching for neighbors
+mingle: all alone
+celery@localhost.localdomain ready.
+Received task: users.tasks.check_password_expired_periodic[9c30ad56-e7fe-4552-b1d8-d592676e2768]  
+Received task: ops.tasks.create_or_update_registered_periodic_tasks[52b41f9b-a2e3-4373-99e9-97f311ed69e2]  
+Received task: terminal.tasks.delete_terminal_status_period[1f277432-276d-476e-aefe-8496d331babe]  
+Received task: terminal.tasks.clean_orphan_session[8a98e1a7-e0b0-45c0-8fba-e9fb5049e48b]  
+Task terminal.tasks.delete_terminal_status_period[1f277432-276d-476e-aefe-8496d331babe] succeeded in 0.030060409000725485s: None
+Received task: terminal.tasks.clean_expired_session_period[4982369e-f102-4e8f-9ec5-dad70c501fdc]  
+Scaling up 1 processes.
+Task terminal.tasks.clean_orphan_session[8a98e1a7-e0b0-45c0-8fba-e9fb5049e48b] succeeded in 0.053999529001885094s: None
+Task users.tasks.check_password_expired_periodic[9c30ad56-e7fe-4552-b1d8-d592676e2768] succeeded in 0.09847611900477204s: None
+Task ops.tasks.create_or_update_registered_periodic_tasks[52b41f9b-a2e3-4373-99e9-97f311ed69e2] succeeded in 0.3408538040093845s: None
+4982369e-f102-4e8f-9ec5-dad70c501fdc terminal.tasks.clean_expired_session_period Start clean expired session record, commands and replay
+Task terminal.tasks.clean_expired_session_period[4982369e-f102-4e8f-9ec5-dad70c501fdc] succeeded in 0.069621422997443s: None
+Scaling down 1 processes.
+Connected to redis://127.0.0.1:6379/3
+mingle: searching for neighbors
+mingle: all alone
+celery@localhost.localdomain ready.
+Received task: users.tasks.check_password_expired_periodic[18f8a886-3f22-4687-8bcb-14d39925a4c2]  
+Received task: ops.tasks.create_or_update_registered_periodic_tasks[313be1c8-2d0d-42bb-b2f9-6980e4c8aaf6]  
+Received task: terminal.tasks.delete_terminal_status_period[0688fbc4-e8eb-424d-b005-f56e128f2895]  
+Received task: terminal.tasks.clean_orphan_session[f0905e32-b056-4b10-acfe-5242e14fd080]  
+Received task: terminal.tasks.clean_expired_session_period[ac694f65-ed2e-4f68-b0c1-9ed67206a1f2]  
+Scaling up 1 processes.
+Task terminal.tasks.clean_orphan_session[f0905e32-b056-4b10-acfe-5242e14fd080] succeeded in 0.0458889740111772s: None
+Task terminal.tasks.delete_terminal_status_period[0688fbc4-e8eb-424d-b005-f56e128f2895] succeeded in 0.0875546720053535s: None
+Task users.tasks.check_password_expired_periodic[18f8a886-3f22-4687-8bcb-14d39925a4c2] succeeded in 0.2324319449980976s: None
+Task ops.tasks.create_or_update_registered_periodic_tasks[313be1c8-2d0d-42bb-b2f9-6980e4c8aaf6] succeeded in 0.2792167169973254s: None
+ac694f65-ed2e-4f68-b0c1-9ed67206a1f2 terminal.tasks.clean_expired_session_period Start clean expired session record, commands and replay
+Task terminal.tasks.clean_expired_session_period[ac694f65-ed2e-4f68-b0c1-9ed67206a1f2] succeeded in 0.023644649001653306s: None
+Connected to redis://127.0.0.1:6379/3
+mingle: searching for neighbors
+mingle: all alone
+celery@localhost.localdomain ready.
+Received task: users.tasks.check_password_expired_periodic[35e177cf-dc17-4215-a44c-e8ede7fc196c]  
+Received task: ops.tasks.create_or_update_registered_periodic_tasks[a4e9783b-ba4a-4398-ac54-de81bd63df3d]  
+Received task: terminal.tasks.delete_terminal_status_period[792172da-3611-4693-86ac-e65d65f86ec0]  
+Received task: terminal.tasks.clean_orphan_session[81878b84-778c-4aa8-95ab-34827b4e28be]  
+Task terminal.tasks.clean_orphan_session[81878b84-778c-4aa8-95ab-34827b4e28be] succeeded in 0.08893580299627502s: None
+Received task: terminal.tasks.clean_expired_session_period[487f092b-ac38-40f1-8bd0-596a28abfe37]  
+Scaling up 1 processes.
+Task terminal.tasks.delete_terminal_status_period[792172da-3611-4693-86ac-e65d65f86ec0] succeeded in 0.12694916600594297s: None
+Task users.tasks.check_password_expired_periodic[35e177cf-dc17-4215-a44c-e8ede7fc196c] succeeded in 0.21825437599909492s: None
+Task ops.tasks.create_or_update_registered_periodic_tasks[a4e9783b-ba4a-4398-ac54-de81bd63df3d] succeeded in 0.5691299340105616s: None
+487f092b-ac38-40f1-8bd0-596a28abfe37 terminal.tasks.clean_expired_session_period Start clean expired session record, commands and replay
+Task terminal.tasks.clean_expired_session_period[487f092b-ac38-40f1-8bd0-596a28abfe37] succeeded in 0.030269666007370688s: None
+Scaling down 1 processes.
+Connected to redis://127.0.0.1:6379/3
+mingle: searching for neighbors
+mingle: all alone
+celery@localhost.localdomain ready.
+Received task: users.tasks.check_password_expired_periodic[d48ec73b-717d-414a-a0ee-623cc3dec508]  
+Received task: ops.tasks.create_or_update_registered_periodic_tasks[1bcca81e-29ce-472e-95cf-cc1514badb88]  
+Received task: terminal.tasks.delete_terminal_status_period[362c357b-97f6-4599-abd4-0bcd177270eb]  
+Received task: terminal.tasks.clean_orphan_session[4fa53bcc-cc2a-4809-ace6-fb59fa89f9c5]  
+Received task: terminal.tasks.clean_expired_session_period[4c0a9e44-4939-42b5-b1a6-25443cfa33e8]  
+Scaling up 1 processes.
+Task terminal.tasks.delete_terminal_status_period[362c357b-97f6-4599-abd4-0bcd177270eb] succeeded in 0.15532143200107384s: None
+Task terminal.tasks.clean_orphan_session[4fa53bcc-cc2a-4809-ace6-fb59fa89f9c5] succeeded in 0.21068017299694475s: None
+Task users.tasks.check_password_expired_periodic[d48ec73b-717d-414a-a0ee-623cc3dec508] succeeded in 0.386258751997957s: None
+4c0a9e44-4939-42b5-b1a6-25443cfa33e8 terminal.tasks.clean_expired_session_period Start clean expired session record, commands and replay
+Task terminal.tasks.clean_expired_session_period[4c0a9e44-4939-42b5-b1a6-25443cfa33e8] succeeded in 0.044717712997226045s: None
+Task ops.tasks.create_or_update_registered_periodic_tasks[1bcca81e-29ce-472e-95cf-cc1514badb88] succeeded in 0.4884463769994909s: None
+Received task: dbaudits.tasks.mongoexecute[a4b5d73a-266a-444c-ae5c-a0bdb1cb2ee0]  
+undefined
+Task dbaudits.tasks.mongoexecute[a4b5d73a-266a-444c-ae5c-a0bdb1cb2ee0] succeeded in 0.0019852329860441387s: None
+Scaling down 1 processes.
+Received task: dbaudits.tasks.mongoexecute[214566ee-68b5-402e-a35b-4b63220583fd]  
+undefined
+Task dbaudits.tasks.mongoexecute[214566ee-68b5-402e-a35b-4b63220583fd] succeeded in 0.04237821300921496s: None
+Received task: dbaudits.tasks.mongoexecute[fbb8400f-7157-4eab-9cff-0f46eeffa348]  
+undefined
+Task dbaudits.tasks.mongoexecute[fbb8400f-7157-4eab-9cff-0f46eeffa348] succeeded in 0.004947943991282955s: None
+Received task: dbaudits.tasks.mongoexecute[2102d506-7e54-47d0-b184-70e566f0714b]  
+undefined
+Task dbaudits.tasks.mongoexecute[2102d506-7e54-47d0-b184-70e566f0714b] succeeded in 0.0018221920036012307s: None
+Received task: dbaudits.tasks.mongoexecute[e058c8e8-8509-4ce9-a80b-683059188f88]  
+undefined
+Task dbaudits.tasks.mongoexecute[e058c8e8-8509-4ce9-a80b-683059188f88] succeeded in 0.014471181988483295s: None
+Connected to redis://127.0.0.1:6379/3
+mingle: searching for neighbors
+mingle: all alone
+celery@localhost.localdomain ready.
+Received task: users.tasks.check_password_expired_periodic[46cdd577-4f81-44dc-897c-ec4c0c112a7d]  
+Received task: ops.tasks.create_or_update_registered_periodic_tasks[79b903f5-52f3-4cf8-8587-de821a6350ef]  
+Received task: terminal.tasks.delete_terminal_status_period[8dd48c4a-408f-4c77-b7cb-258880ec5aac]  
+Received task: terminal.tasks.clean_orphan_session[44053f58-5687-47da-ba10-ccbd818a78e4]  
+Received task: terminal.tasks.clean_expired_session_period[aa3abf62-6123-4a86-beb2-aa985a07097a]  
+Scaling up 1 processes.
+Task terminal.tasks.clean_orphan_session[44053f58-5687-47da-ba10-ccbd818a78e4] succeeded in 0.06281334099185187s: None
+Task users.tasks.check_password_expired_periodic[46cdd577-4f81-44dc-897c-ec4c0c112a7d] succeeded in 0.11612516699824482s: None
+Task terminal.tasks.delete_terminal_status_period[8dd48c4a-408f-4c77-b7cb-258880ec5aac] succeeded in 0.07840804899751674s: None
+aa3abf62-6123-4a86-beb2-aa985a07097a terminal.tasks.clean_expired_session_period Start clean expired session record, commands and replay
+Task terminal.tasks.clean_expired_session_period[aa3abf62-6123-4a86-beb2-aa985a07097a] succeeded in 0.01811612800520379s: None
+Task ops.tasks.create_or_update_registered_periodic_tasks[79b903f5-52f3-4cf8-8587-de821a6350ef] succeeded in 0.4976280450064223s: None
+Scaling down 1 processes.
+Received task: dbaudits.tasks.mongoexecute[09ad2e27-b1bf-471d-aa48-ac790bdfefe7]  
+undefined
+Task dbaudits.tasks.mongoexecute[09ad2e27-b1bf-471d-aa48-ac790bdfefe7] succeeded in 0.004875529994023964s: None
+Received task: terminal.tasks.clean_orphan_session[156a0bfe-bb5f-47f7-ac9f-97a58a6fcdb2]  
+Task terminal.tasks.clean_orphan_session[156a0bfe-bb5f-47f7-ac9f-97a58a6fcdb2] succeeded in 0.059608672992908396s: None
+Connected to redis://127.0.0.1:6379/3
+mingle: searching for neighbors
+mingle: all alone
+celery@localhost.localdomain ready.
+Received task: users.tasks.check_password_expired_periodic[af8a58f4-51a2-4f1a-8554-aec0fff1ee47]  
+Received task: ops.tasks.create_or_update_registered_periodic_tasks[529799f1-07a6-41c9-94aa-3c68a73eff33]  
+Received task: terminal.tasks.delete_terminal_status_period[2c1f4740-741c-4ac9-9a7d-8d709c8c0471]  
+Received task: terminal.tasks.clean_orphan_session[42f502d3-a4a9-44cc-97ed-ab39eff794d8]  
+Task terminal.tasks.clean_orphan_session[42f502d3-a4a9-44cc-97ed-ab39eff794d8] succeeded in 0.021765849000075832s: None
+Task terminal.tasks.delete_terminal_status_period[2c1f4740-741c-4ac9-9a7d-8d709c8c0471] succeeded in 0.03481461699993815s: None
+Received task: terminal.tasks.clean_expired_session_period[0e84cdb7-c381-45e9-bed7-c9872edc8741]  
+Scaling up 1 processes.
+Task users.tasks.check_password_expired_periodic[af8a58f4-51a2-4f1a-8554-aec0fff1ee47] succeeded in 0.17134546999295708s: None
+0e84cdb7-c381-45e9-bed7-c9872edc8741 terminal.tasks.clean_expired_session_period Start clean expired session record, commands and replay
+Task ops.tasks.create_or_update_registered_periodic_tasks[529799f1-07a6-41c9-94aa-3c68a73eff33] succeeded in 0.37891645600029733s: None
+Task terminal.tasks.clean_expired_session_period[0e84cdb7-c381-45e9-bed7-c9872edc8741] succeeded in 0.1056537650001701s: None
+Scaling down 1 processes.
+Connected to redis://127.0.0.1:6379/3
+mingle: searching for neighbors
+mingle: all alone
+celery@localhost.localdomain ready.
+Received task: users.tasks.check_password_expired_periodic[5cc8aa36-00d4-4314-b4c2-bcace548fc36]  
+Received task: ops.tasks.create_or_update_registered_periodic_tasks[9ed3492d-1a6c-4716-aa2f-cfccf53646c3]  
+Received task: terminal.tasks.delete_terminal_status_period[410aeae0-2fbd-4f3d-99c1-4cf1a00e580b]  
+Received task: terminal.tasks.clean_orphan_session[3e6a9638-97f2-425f-a5bb-49db28658a3e]  
+Task terminal.tasks.clean_orphan_session[3e6a9638-97f2-425f-a5bb-49db28658a3e] succeeded in 0.07416989699413534s: None
+Received task: terminal.tasks.clean_expired_session_period[5c816004-8882-48ee-b621-39ffd94281dd]  
+Scaling up 1 processes.
+Task terminal.tasks.delete_terminal_status_period[410aeae0-2fbd-4f3d-99c1-4cf1a00e580b] succeeded in 0.09574908300419338s: None
+Task users.tasks.check_password_expired_periodic[5cc8aa36-00d4-4314-b4c2-bcace548fc36] succeeded in 0.19105592799314763s: None
+Task ops.tasks.create_or_update_registered_periodic_tasks[9ed3492d-1a6c-4716-aa2f-cfccf53646c3] succeeded in 0.3190938100015046s: None
+5c816004-8882-48ee-b621-39ffd94281dd terminal.tasks.clean_expired_session_period Start clean expired session record, commands and replay
+Task terminal.tasks.clean_expired_session_period[5c816004-8882-48ee-b621-39ffd94281dd] succeeded in 0.009893149996059947s: None
+Scaling down 1 processes.
+Connected to redis://127.0.0.1:6379/3
+mingle: searching for neighbors
+mingle: all alone
+celery@localhost.localdomain ready.
+Received task: users.tasks.check_password_expired_periodic[36b2c9ea-8bee-4133-9a2b-27a437eea3d8]  
+Received task: ops.tasks.create_or_update_registered_periodic_tasks[407ab592-6228-4966-9b6a-8c76bb2b9545]  
+Received task: terminal.tasks.delete_terminal_status_period[a7c6dd31-df8b-4c9e-a9db-ed8a1a68c8ca]  
+Received task: terminal.tasks.clean_orphan_session[ab40b1db-402c-422c-a1b8-48e09498c0a2]  
+Received task: terminal.tasks.clean_expired_session_period[13a2c5fb-98e5-4c20-ba16-bac92505bf1f]  
+Scaling up 1 processes.
+Task users.tasks.check_password_expired_periodic[36b2c9ea-8bee-4133-9a2b-27a437eea3d8] succeeded in 0.11457105899171438s: None
+Task terminal.tasks.clean_orphan_session[ab40b1db-402c-422c-a1b8-48e09498c0a2] succeeded in 0.06227922199468594s: None
+Task terminal.tasks.delete_terminal_status_period[a7c6dd31-df8b-4c9e-a9db-ed8a1a68c8ca] succeeded in 0.05744304199470207s: None
+13a2c5fb-98e5-4c20-ba16-bac92505bf1f terminal.tasks.clean_expired_session_period Start clean expired session record, commands and replay
+Task terminal.tasks.clean_expired_session_period[13a2c5fb-98e5-4c20-ba16-bac92505bf1f] succeeded in 0.0318287279951619s: None
+Task ops.tasks.create_or_update_registered_periodic_tasks[407ab592-6228-4966-9b6a-8c76bb2b9545] succeeded in 0.31648329898598604s: None
+Scaling down 1 processes.
+Received task: assets.tasks.test_admin_user_connectivity_period[0c9d5238-db0b-4a0e-90dc-814dad7a8c89]  
+Task assets.tasks.test_admin_user_connectivity_period[0c9d5238-db0b-4a0e-90dc-814dad7a8c89] succeeded in 0.0592978979984764s: None
+Received task: terminal.tasks.clean_orphan_session[ff22e2cc-a8ae-48ea-8f35-62279e728176]  
+Task terminal.tasks.clean_orphan_session[ff22e2cc-a8ae-48ea-8f35-62279e728176] succeeded in 0.006968389992835s: None
+Received task: terminal.tasks.clean_orphan_session[c22c271e-e0b6-4255-b807-146cfb86e361]  
+Task terminal.tasks.clean_orphan_session[c22c271e-e0b6-4255-b807-146cfb86e361] succeeded in 0.01082863099873066s: None
+Received task: terminal.tasks.clean_orphan_session[31a4e513-d0bb-4e06-a079-543373320d50]  
+Task terminal.tasks.clean_orphan_session[31a4e513-d0bb-4e06-a079-543373320d50] succeeded in 0.009554090996971354s: None
+Received task: terminal.tasks.clean_orphan_session[bcc3bf37-5551-4227-8551-d11ff5491226]  
+Task terminal.tasks.clean_orphan_session[bcc3bf37-5551-4227-8551-d11ff5491226] succeeded in 0.08752026800357271s: None
+Received task: terminal.tasks.clean_orphan_session[c1cede1f-0b80-4452-973b-80dfeb173260]  
+Task terminal.tasks.clean_orphan_session[c1cede1f-0b80-4452-973b-80dfeb173260] succeeded in 0.05536644399398938s: None
+Received task: terminal.tasks.delete_terminal_status_period[358cafc6-ad9c-4a9c-8269-356c89c42a72]  
+Task terminal.tasks.delete_terminal_status_period[358cafc6-ad9c-4a9c-8269-356c89c42a72] succeeded in 0.011551800998859107s: None
+Received task: terminal.tasks.clean_orphan_session[235f7599-9f91-494c-80c8-3a8be5f560ea]  
+Task terminal.tasks.clean_orphan_session[235f7599-9f91-494c-80c8-3a8be5f560ea] succeeded in 0.07310345600126311s: None
+Received task: assets.tasks.test_admin_user_connectivity_period[65c73529-45e4-449a-b904-894c1f209f05]  
+Task assets.tasks.test_admin_user_connectivity_period[65c73529-45e4-449a-b904-894c1f209f05] succeeded in 0.02852788100426551s: None
+Received task: terminal.tasks.clean_orphan_session[ad1ea576-7851-4523-9b1c-da3184447fdc]  
+Task terminal.tasks.clean_orphan_session[ad1ea576-7851-4523-9b1c-da3184447fdc] succeeded in 0.005961193994153291s: None
+Connected to redis://127.0.0.1:6379/3
+mingle: searching for neighbors
+mingle: all alone
+celery@localhost.localdomain ready.
+Received task: users.tasks.check_password_expired_periodic[e1939ced-9b76-4beb-8584-0afa430ff07a]  
+Received task: ops.tasks.create_or_update_registered_periodic_tasks[f7a1636b-6f7d-4591-a623-f28bf06c0191]  
+Received task: terminal.tasks.delete_terminal_status_period[11e44d33-aa10-4e23-a387-c0a8b9ac45da]  
+Received task: terminal.tasks.clean_orphan_session[37645bab-e1a4-42dd-8175-32ad96d6dfc6]  
+Received task: terminal.tasks.clean_expired_session_period[447dee22-a7fe-42c9-a9e3-9a0d3d693288]  
+Scaling up 1 processes.
+Task terminal.tasks.delete_terminal_status_period[11e44d33-aa10-4e23-a387-c0a8b9ac45da] succeeded in 0.0647041930060368s: None
+447dee22-a7fe-42c9-a9e3-9a0d3d693288 terminal.tasks.clean_expired_session_period Start clean expired session record, commands and replay
+Task terminal.tasks.clean_orphan_session[37645bab-e1a4-42dd-8175-32ad96d6dfc6] succeeded in 0.11543595399416517s: None
+Task terminal.tasks.clean_expired_session_period[447dee22-a7fe-42c9-a9e3-9a0d3d693288] succeeded in 0.02996925100160297s: None
+Task users.tasks.check_password_expired_periodic[e1939ced-9b76-4beb-8584-0afa430ff07a] succeeded in 0.2036360829952173s: None
+Task ops.tasks.create_or_update_registered_periodic_tasks[f7a1636b-6f7d-4591-a623-f28bf06c0191] succeeded in 0.9771108149870997s: None
+Scaling down 1 processes.
+Connected to redis://127.0.0.1:6379/3
+mingle: searching for neighbors
+mingle: all alone
+celery@localhost.localdomain ready.
+Received task: users.tasks.check_password_expired_periodic[eba77c85-abdd-4457-b0ab-628e4d2f120a]  
+Received task: ops.tasks.create_or_update_registered_periodic_tasks[e8ae0c18-3fda-4201-ba0c-3b3d0af1a9e0]  
+Received task: terminal.tasks.delete_terminal_status_period[f8a85eae-6af2-4eff-8a1c-9ee3b2df8598]  
+Received task: terminal.tasks.clean_orphan_session[933facfb-20ea-4c10-990c-19e2085f3f2c]  
+Received task: terminal.tasks.clean_expired_session_period[f18549e1-83b8-49f9-9bac-ea64ce101ad9]  
+Scaling up 1 processes.
+Task terminal.tasks.delete_terminal_status_period[f8a85eae-6af2-4eff-8a1c-9ee3b2df8598] succeeded in 0.09008716700191144s: None
+Task users.tasks.check_password_expired_periodic[eba77c85-abdd-4457-b0ab-628e4d2f120a] succeeded in 0.15328012099780608s: None
+f18549e1-83b8-49f9-9bac-ea64ce101ad9 terminal.tasks.clean_expired_session_period Start clean expired session record, commands and replay
+Task ops.tasks.create_or_update_registered_periodic_tasks[e8ae0c18-3fda-4201-ba0c-3b3d0af1a9e0] succeeded in 0.2265347710053902s: None
+Task terminal.tasks.clean_orphan_session[933facfb-20ea-4c10-990c-19e2085f3f2c] succeeded in 0.029493096997612156s: None
+Task terminal.tasks.clean_expired_session_period[f18549e1-83b8-49f9-9bac-ea64ce101ad9] succeeded in 0.03829521000443492s: None
+Connected to redis://127.0.0.1:6379/3
+mingle: searching for neighbors
+mingle: all alone
+celery@localhost.localdomain ready.
+Received task: users.tasks.check_password_expired_periodic[e780cb97-b59b-4720-a25d-091b743be509]  
+Received task: ops.tasks.create_or_update_registered_periodic_tasks[21baf5cf-63de-4ba2-8455-545a64d5938d]  
+Received task: terminal.tasks.delete_terminal_status_period[9ffee326-e5bd-46f1-b907-32c763bac861]  
+Received task: terminal.tasks.clean_orphan_session[bfb1e782-90e5-45f1-b33f-647caf7a5517]  
+Received task: terminal.tasks.clean_expired_session_period[19dd7fed-b5d9-4e60-9824-3f0142601eef]  
+Scaling up 1 processes.
+Task terminal.tasks.delete_terminal_status_period[9ffee326-e5bd-46f1-b907-32c763bac861] succeeded in 0.0950333340006182s: None
+Task users.tasks.check_password_expired_periodic[e780cb97-b59b-4720-a25d-091b743be509] succeeded in 0.17192823100776877s: None
+19dd7fed-b5d9-4e60-9824-3f0142601eef terminal.tasks.clean_expired_session_period Start clean expired session record, commands and replay
+Task terminal.tasks.clean_orphan_session[bfb1e782-90e5-45f1-b33f-647caf7a5517] succeeded in 0.048118684004293755s: None
+Task terminal.tasks.clean_expired_session_period[19dd7fed-b5d9-4e60-9824-3f0142601eef] succeeded in 0.030211837991373613s: None
+Task ops.tasks.create_or_update_registered_periodic_tasks[21baf5cf-63de-4ba2-8455-545a64d5938d] succeeded in 0.3300748010078678s: None
+Scaling down 1 processes.
+Connected to redis://127.0.0.1:6379/3
+mingle: searching for neighbors
+mingle: all alone
+celery@localhost.localdomain ready.
+Received task: users.tasks.check_password_expired_periodic[1aa5c47b-0539-4505-b4cf-59ffdef199dc]  
+Received task: ops.tasks.create_or_update_registered_periodic_tasks[c79896fa-36f0-418a-9d8d-a93a6839da01]  
+Received task: terminal.tasks.delete_terminal_status_period[d9708607-2235-4da5-9258-747449a8bca1]  
+Received task: terminal.tasks.clean_orphan_session[e9350156-102b-4fb5-aea6-8d4939244d1a]  
+Received task: terminal.tasks.clean_expired_session_period[76414919-65b9-4586-a857-b32cba5d2174]  
+Scaling up 1 processes.
+Task terminal.tasks.delete_terminal_status_period[d9708607-2235-4da5-9258-747449a8bca1] succeeded in 0.06425920799665619s: None
+Task terminal.tasks.clean_orphan_session[e9350156-102b-4fb5-aea6-8d4939244d1a] succeeded in 0.11454965600569267s: None
+Task users.tasks.check_password_expired_periodic[1aa5c47b-0539-4505-b4cf-59ffdef199dc] succeeded in 0.19372919699526392s: None
+76414919-65b9-4586-a857-b32cba5d2174 terminal.tasks.clean_expired_session_period Start clean expired session record, commands and replay
+Task terminal.tasks.clean_expired_session_period[76414919-65b9-4586-a857-b32cba5d2174] succeeded in 0.0386358219984686s: None
+Task ops.tasks.create_or_update_registered_periodic_tasks[c79896fa-36f0-418a-9d8d-a93a6839da01] succeeded in 0.25857689100666903s: None
+Received task: dbaudits.tasks.mongoexecute[770b38ad-1a8f-47e0-a004-273b624e69a2]  
+Scaling down 1 processes.
+6101796b-c538-4188-b219-d900b8ca2e8a
+Task dbaudits.tasks.mongoexecute[770b38ad-1a8f-47e0-a004-273b624e69a2] succeeded in 0.01571905800665263s: None
+Connected to redis://127.0.0.1:6379/3
+mingle: searching for neighbors
+mingle: all alone
+celery@localhost.localdomain ready.
+Received task: users.tasks.check_password_expired_periodic[3c3dd109-f80a-40e1-ae5e-83cfe2afc94a]  
+Received task: ops.tasks.create_or_update_registered_periodic_tasks[96c24b33-3427-4351-91ce-6891e6e61233]  
+Received task: terminal.tasks.delete_terminal_status_period[bcc5dc20-82a3-475a-82cf-5194ef69dfeb]  
+Received task: terminal.tasks.clean_orphan_session[319d15f3-1cc8-4398-af43-fd5e4098d014]  
+Received task: terminal.tasks.clean_expired_session_period[653aca5e-6ba4-474b-8915-b07e0f2f2a41]  
+Scaling up 1 processes.
+Task terminal.tasks.clean_orphan_session[319d15f3-1cc8-4398-af43-fd5e4098d014] succeeded in 0.129255348991137s: None
+Task terminal.tasks.delete_terminal_status_period[bcc5dc20-82a3-475a-82cf-5194ef69dfeb] succeeded in 0.29619649300002493s: None
+Task users.tasks.check_password_expired_periodic[3c3dd109-f80a-40e1-ae5e-83cfe2afc94a] succeeded in 0.34258957000565715s: None
+653aca5e-6ba4-474b-8915-b07e0f2f2a41 terminal.tasks.clean_expired_session_period Start clean expired session record, commands and replay
+Task terminal.tasks.clean_expired_session_period[653aca5e-6ba4-474b-8915-b07e0f2f2a41] succeeded in 0.038212635001400486s: None
+Task ops.tasks.create_or_update_registered_periodic_tasks[96c24b33-3427-4351-91ce-6891e6e61233] succeeded in 0.5358930929942289s: None
+Received task: dbaudits.tasks.mongoexecute[99763572-6783-46e3-b8ef-965ace4c824b]  
+6101796b-c538-4188-b219-d900b8ca2e8a1111111111111
+Task dbaudits.tasks.mongoexecute[99763572-6783-46e3-b8ef-965ace4c824b] succeeded in 0.0027107850037282333s: None
+Scaling down 1 processes.
+Received task: terminal.tasks.clean_orphan_session[09d162d8-8c3e-44f5-9643-c54ac99ad2a1]  
+Task terminal.tasks.clean_orphan_session[09d162d8-8c3e-44f5-9643-c54ac99ad2a1] succeeded in 0.008490093998261727s: None
+Received task: dbaudits.tasks.mongoexecute[25d12293-c3b5-4150-9440-1dbc11d0942a]  
+6101796b-c538-4188-b219-d900b8ca2e8a1111111111111
+Task dbaudits.tasks.mongoexecute[25d12293-c3b5-4150-9440-1dbc11d0942a] succeeded in 0.02894097298849374s: None
+Received task: dbaudits.tasks.mongoexecute[f4a1e840-5bd6-4883-89db-154bc9c60af0]  
+6101796b-c538-4188-b219-d900b8ca2e8a1111111111111
+Task dbaudits.tasks.mongoexecute[f4a1e840-5bd6-4883-89db-154bc9c60af0] succeeded in 0.06455613599973731s: None
+Received task: dbaudits.tasks.mongoexecute[da17c459-0e78-48f4-bbbe-e3632db0ed29]  
+6101796b-c538-4188-b219-d900b8ca2e8a1111111111111
+Task dbaudits.tasks.mongoexecute[da17c459-0e78-48f4-bbbe-e3632db0ed29] succeeded in 0.045593383998493664s: None
+Connected to redis://127.0.0.1:6379/3
+mingle: searching for neighbors
+mingle: all alone
+celery@localhost.localdomain ready.
+Received task: users.tasks.check_password_expired_periodic[ea117d48-ce66-4382-98ed-7453ed895088]  
+Received task: ops.tasks.create_or_update_registered_periodic_tasks[c156d181-5c43-40e5-a590-3f881e5ab669]  
+Received task: terminal.tasks.delete_terminal_status_period[13f849c0-0716-4de9-9b99-eee25ff2e8fb]  
+Received task: terminal.tasks.clean_orphan_session[9501bda2-17be-4255-889d-4ad933ac0941]  
+Received task: terminal.tasks.clean_expired_session_period[fc58fbc8-8393-4213-8051-4ba305fa6b35]  
+Scaling up 1 processes.
+Task terminal.tasks.clean_orphan_session[9501bda2-17be-4255-889d-4ad933ac0941] succeeded in 0.06639365199953318s: None
+Task terminal.tasks.delete_terminal_status_period[13f849c0-0716-4de9-9b99-eee25ff2e8fb] succeeded in 0.11628945199481677s: None
+fc58fbc8-8393-4213-8051-4ba305fa6b35 terminal.tasks.clean_expired_session_period Start clean expired session record, commands and replay
+Task users.tasks.check_password_expired_periodic[ea117d48-ce66-4382-98ed-7453ed895088] succeeded in 0.19830835500033572s: None
+Task terminal.tasks.clean_expired_session_period[fc58fbc8-8393-4213-8051-4ba305fa6b35] succeeded in 0.038166308993822895s: None
+Task ops.tasks.create_or_update_registered_periodic_tasks[c156d181-5c43-40e5-a590-3f881e5ab669] succeeded in 0.32677233799768146s: None
+Received task: dbaudits.tasks.mongoexecute[e40da730-7089-4341-82fe-20fc9bc05126]  
+Scaling down 1 processes.
+6101796b-c538-4188-b219-d900b8ca2e8a1111111111111
+Task dbaudits.tasks.mongoexecute[e40da730-7089-4341-82fe-20fc9bc05126] succeeded in 0.05164541500562336s: None
+Received task: terminal.tasks.clean_orphan_session[7f03df89-763f-4cba-9159-aaf7e401fa33]  
+Task terminal.tasks.clean_orphan_session[7f03df89-763f-4cba-9159-aaf7e401fa33] succeeded in 0.013912312002503313s: None
+Connected to redis://127.0.0.1:6379/3
+mingle: searching for neighbors
+mingle: all alone
+celery@localhost.localdomain ready.
+Received task: users.tasks.check_password_expired_periodic[0113baa1-8e47-4a66-8cb1-51cc728b549f]  
+Received task: ops.tasks.create_or_update_registered_periodic_tasks[ceaedd94-9143-4b15-8ba0-98cee038e4f3]  
+Received task: terminal.tasks.delete_terminal_status_period[01b8e560-99f8-4eed-8219-d7329ee42393]  
+Received task: terminal.tasks.clean_orphan_session[aa634a0e-409b-449d-8855-9acdf3524690]  
+Task terminal.tasks.delete_terminal_status_period[01b8e560-99f8-4eed-8219-d7329ee42393] succeeded in 0.10478705300192814s: None
+Received task: terminal.tasks.clean_expired_session_period[281ba311-ece5-4c00-bb84-97d92d39e378]  
+Scaling up 1 processes.
+Task users.tasks.check_password_expired_periodic[0113baa1-8e47-4a66-8cb1-51cc728b549f] succeeded in 0.34552766200795304s: None
+Task terminal.tasks.clean_orphan_session[aa634a0e-409b-449d-8855-9acdf3524690] succeeded in 0.016933223989326507s: None
+281ba311-ece5-4c00-bb84-97d92d39e378 terminal.tasks.clean_expired_session_period Start clean expired session record, commands and replay
+Task terminal.tasks.clean_expired_session_period[281ba311-ece5-4c00-bb84-97d92d39e378] succeeded in 0.05125900999701116s: None
+Task ops.tasks.create_or_update_registered_periodic_tasks[ceaedd94-9143-4b15-8ba0-98cee038e4f3] succeeded in 0.4610636730067199s: None
+Scaling down 1 processes.
+Received task: dbaudits.tasks.mongoexecute[bad8c3d0-3b0a-4017-be18-8f0491f3fbdb]  
+6101796b-c538-4188-b219-d900b8ca2e8a1111111111111
+Task dbaudits.tasks.mongoexecute[bad8c3d0-3b0a-4017-be18-8f0491f3fbdb] succeeded in 0.07455690699862316s: None
+Received task: dbaudits.tasks.mongoexecute[6e7152db-e2e5-401e-a5d1-aa4ed871b619]  
+6101796b-c538-4188-b219-d900b8ca2e8a1111111111111
+Task dbaudits.tasks.mongoexecute[6e7152db-e2e5-401e-a5d1-aa4ed871b619] succeeded in 0.0030146680073812604s: None
+Received task: terminal.tasks.clean_orphan_session[af7c9dc1-b106-413d-8c3d-ca14dd10c898]  
+Task terminal.tasks.clean_orphan_session[af7c9dc1-b106-413d-8c3d-ca14dd10c898] succeeded in 0.010205218000919558s: None
+Received task: dbaudits.tasks.mongoexecute[1c314c05-42ee-4d39-919d-3a1496228f56]  
+6101796b-c538-4188-b219-d900b8ca2e8a1111111111111
+Task dbaudits.tasks.mongoexecute[1c314c05-42ee-4d39-919d-3a1496228f56] succeeded in 0.026601273013511673s: None
+Received task: assets.tasks.test_admin_user_connectivity_period[0d8862b6-8d47-46c4-9707-52c09d7ac44b]  
+Task assets.tasks.test_admin_user_connectivity_period[0d8862b6-8d47-46c4-9707-52c09d7ac44b] succeeded in 0.007829552007024176s: None
+Received task: terminal.tasks.clean_orphan_session[5f777159-c49d-4e69-b921-6cf8fa315e30]  
+Task terminal.tasks.clean_orphan_session[5f777159-c49d-4e69-b921-6cf8fa315e30] succeeded in 0.016421463995357044s: None
+Received task: terminal.tasks.clean_orphan_session[cb2ee477-a961-4253-aeb0-e9566021ce7e]  
+Task terminal.tasks.clean_orphan_session[cb2ee477-a961-4253-aeb0-e9566021ce7e] succeeded in 0.052338098001200706s: None
+Received task: terminal.tasks.clean_orphan_session[43174c18-7ef8-4b8e-a26a-0b3766e44df8]  
+Task terminal.tasks.clean_orphan_session[43174c18-7ef8-4b8e-a26a-0b3766e44df8] succeeded in 0.05076823799754493s: None
+Received task: terminal.tasks.clean_orphan_session[b159a9b1-c95a-4f17-b469-50298ae50e61]  
+Task terminal.tasks.clean_orphan_session[b159a9b1-c95a-4f17-b469-50298ae50e61] succeeded in 0.007809720991645008s: None
+Received task: terminal.tasks.delete_terminal_status_period[0024e375-e6b6-4883-aefc-c778eb9bb41e]  
+Task terminal.tasks.delete_terminal_status_period[0024e375-e6b6-4883-aefc-c778eb9bb41e] succeeded in 0.012097716986318119s: None
+Received task: terminal.tasks.clean_orphan_session[c5cfa19d-8b8f-448f-a272-815384cf752a]  
+Received task: assets.tasks.test_admin_user_connectivity_period[143d68bf-90ca-4f6e-9ad8-7da183ddb17c]  
+Task terminal.tasks.clean_orphan_session[c5cfa19d-8b8f-448f-a272-815384cf752a] succeeded in 0.1968670829955954s: None
+Task assets.tasks.test_admin_user_connectivity_period[143d68bf-90ca-4f6e-9ad8-7da183ddb17c] succeeded in 0.25850647999322973s: None
+Received task: terminal.tasks.clean_orphan_session[6591a7b4-dbb2-4bb0-84b6-af9671ab5e41]  
+Task terminal.tasks.clean_orphan_session[6591a7b4-dbb2-4bb0-84b6-af9671ab5e41] succeeded in 0.00869140301074367s: None
+Received task: terminal.tasks.clean_orphan_session[6f6c89e9-9e6e-4713-aa54-cdb6df7c41cc]  
+Task terminal.tasks.clean_orphan_session[6f6c89e9-9e6e-4713-aa54-cdb6df7c41cc] succeeded in 0.05334761399717536s: None
+Received task: dbaudits.tasks.mongoexecute[898fbf48-6b8a-4cdc-bf2d-b16b94065722]  
+6101796b-c538-4188-b219-d900b8ca2e8a1111111111111
+Task dbaudits.tasks.mongoexecute[898fbf48-6b8a-4cdc-bf2d-b16b94065722] succeeded in 0.007707476994255558s: None
+Received task: dbaudits.tasks.mongoexecute[1f6000f0-cbad-4826-9575-655d54dc0052]  
+6101796b-c538-4188-b219-d900b8ca2e8a1111111111111
+Task dbaudits.tasks.mongoexecute[1f6000f0-cbad-4826-9575-655d54dc0052] succeeded in 0.00393350500962697s: None
+Connected to redis://127.0.0.1:6379/3
+mingle: searching for neighbors
+mingle: all alone
+celery@localhost.localdomain ready.
+Received task: users.tasks.check_password_expired_periodic[8ec62e77-07b9-4b7a-ba98-ac81b8f275cf]  
+Received task: ops.tasks.create_or_update_registered_periodic_tasks[3af12b90-69a1-4393-8dab-b130d6b45521]  
+Received task: terminal.tasks.delete_terminal_status_period[a95f1779-3a41-4369-8d0d-dd6b0b808bfc]  
+Received task: terminal.tasks.clean_orphan_session[c30a906c-304d-4e35-a767-d96537efcbc6]  
+Task terminal.tasks.delete_terminal_status_period[a95f1779-3a41-4369-8d0d-dd6b0b808bfc] succeeded in 0.05219148099422455s: None
+Received task: terminal.tasks.clean_expired_session_period[e9b18ba5-00a7-40a6-966a-b4722b85b3d9]  
+Scaling up 1 processes.
+Task users.tasks.check_password_expired_periodic[8ec62e77-07b9-4b7a-ba98-ac81b8f275cf] succeeded in 0.197708435007371s: None
+e9b18ba5-00a7-40a6-966a-b4722b85b3d9 terminal.tasks.clean_expired_session_period Start clean expired session record, commands and replay
+Task terminal.tasks.clean_expired_session_period[e9b18ba5-00a7-40a6-966a-b4722b85b3d9] succeeded in 0.057064503998844884s: None
+Task terminal.tasks.clean_orphan_session[c30a906c-304d-4e35-a767-d96537efcbc6] succeeded in 0.17788642599771265s: None
+Task ops.tasks.create_or_update_registered_periodic_tasks[3af12b90-69a1-4393-8dab-b130d6b45521] succeeded in 0.8140076330018928s: None
+Received task: dbaudits.tasks.mongoexecute[14da6f86-d752-46e0-bb4e-db1faa1a2b64]  
+6101796b-c538-4188-b219-d900b8ca2e8a1111111111111
+Task dbaudits.tasks.mongoexecute[14da6f86-d752-46e0-bb4e-db1faa1a2b64] succeeded in 0.0020854180038440973s: None
+Scaling down 1 processes.
+Connected to redis://127.0.0.1:6379/3
+mingle: searching for neighbors
+mingle: all alone
+celery@localhost.localdomain ready.
+Received task: users.tasks.check_password_expired_periodic[1c11a1f4-ef86-41b1-9c7e-59ad139c43bb]  
+Received task: ops.tasks.create_or_update_registered_periodic_tasks[f15affef-c74e-4d27-8bea-fa2d6806aac5]  
+Received task: terminal.tasks.delete_terminal_status_period[493ba3c2-be7f-466a-a7b8-ff335d2c2c48]  
+Received task: terminal.tasks.clean_orphan_session[640b2134-cc68-4796-85b1-d0399d3795be]  
+Received task: terminal.tasks.clean_expired_session_period[ce4fc5a4-23b2-4fcc-91d0-16d5305f2069]  
+Scaling up 1 processes.
+Task terminal.tasks.delete_terminal_status_period[493ba3c2-be7f-466a-a7b8-ff335d2c2c48] succeeded in 0.44555895900703035s: None
+Task users.tasks.check_password_expired_periodic[1c11a1f4-ef86-41b1-9c7e-59ad139c43bb] succeeded in 0.514211350993719s: None
+ce4fc5a4-23b2-4fcc-91d0-16d5305f2069 terminal.tasks.clean_expired_session_period Start clean expired session record, commands and replay
+Task terminal.tasks.clean_orphan_session[640b2134-cc68-4796-85b1-d0399d3795be] succeeded in 0.060485972004244104s: None
+Task terminal.tasks.clean_expired_session_period[ce4fc5a4-23b2-4fcc-91d0-16d5305f2069] succeeded in 0.05058489499788266s: None
+Task ops.tasks.create_or_update_registered_periodic_tasks[f15affef-c74e-4d27-8bea-fa2d6806aac5] succeeded in 0.7913547189964447s: None
+Received task: dbaudits.tasks.mongoexecute[8e507497-2adc-46a5-8f76-b3c8472dd314]  
+6101796b-c538-4188-b219-d900b8ca2e8a1111111111111
+Task dbaudits.tasks.mongoexecute[8e507497-2adc-46a5-8f76-b3c8472dd314] succeeded in 0.0013669649924850091s: None
+Received task: dbaudits.tasks.mongoexecute[acc4c733-e9a2-4997-888f-cdc9d90e8717]  
+Scaling down 1 processes.
+6101796b-c538-4188-b219-d900b8ca2e8a1111111111111
+Task dbaudits.tasks.mongoexecute[acc4c733-e9a2-4997-888f-cdc9d90e8717] succeeded in 0.008202003999031149s: None
+Received task: dbaudits.tasks.mongoexecute[3dd3e0f6-f2e5-475a-b7d1-de96340ffa16]  
+fd3e0566-d0c7-4f0e-88d4-bbceae3a08d51111111111111
+Task dbaudits.tasks.mongoexecute[3dd3e0f6-f2e5-475a-b7d1-de96340ffa16] succeeded in 0.003849976012133993s: None
+Received task: dbaudits.tasks.mongoexecute[b882f937-f234-4e81-a767-39c2b30b58ad]  
+fd3e0566-d0c7-4f0e-88d4-bbceae3a08d51111111111111
+Task dbaudits.tasks.mongoexecute[b882f937-f234-4e81-a767-39c2b30b58ad] succeeded in 0.047504586007562466s: None
+Received task: deploy.tasks.deployjenkins[7117b138-aefa-4035-8117-c45e83d071de]  
+Received task: deploy.tasks.deployjenkins[f43a5254-0058-4788-9ecc-ff276e7678b2]  
+Received task: deploy.tasks.deployjenkins[2c4b5dc5-26d7-4cbb-8ebb-6d468ac51948]  
+Task deploy.tasks.deployjenkins[f43a5254-0058-4788-9ecc-ff276e7678b2] raised unexpected: ConnectionError(MaxRetryError('HTTPConnectionPool(host=\'10.111.12.46\', port=80): Max retries exceeded with url: /job/07_ttms-server_13_ttms-schedule-dev2/api/python?tree=allBuilds%5Bnumber%2Curl%5D (Caused by ReadTimeoutError("HTTPConnectionPool(host=\'10.111.12.46\', port=80): Read timed out. (read timeout=10)",))',),)
+Traceback (most recent call last):
+  File "/opt/py3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 387, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 2, in raise_from
+  File "/opt/py3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 383, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/local/lib/python3.6/http/client.py", line 1331, in getresponse
+    response.begin()
+  File "/usr/local/lib/python3.6/http/client.py", line 297, in begin
+    version, status, reason = self._read_status()
+  File "/usr/local/lib/python3.6/http/client.py", line 258, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/local/lib/python3.6/socket.py", line 586, in readinto
+    return self._sock.recv_into(b)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/py3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 601, in urlopen
+    chunked=chunked)
+  File "/opt/py3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 389, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/opt/py3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 309, in _raise_timeout
+    raise ReadTimeoutError(self, url, "Read timed out. (read timeout=%s)" % timeout_value)
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='10.111.12.46', port=80): Read timed out. (read timeout=10)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/py3/lib/python3.6/site-packages/requests/adapters.py", line 440, in send
+    timeout=timeout
+  File "/opt/py3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 639, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/opt/py3/lib/python3.6/site-packages/urllib3/util/retry.py", line 388, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='10.111.12.46', port=80): Max retries exceeded with url: /job/07_ttms-server_13_ttms-schedule-dev2/api/python?tree=allBuilds%5Bnumber%2Curl%5D (Caused by ReadTimeoutError("HTTPConnectionPool(host='10.111.12.46', port=80): Read timed out. (read timeout=10)",))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/py3/lib/python3.6/site-packages/celery/app/trace.py", line 374, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/opt/py3/lib/python3.6/site-packages/celery/app/trace.py", line 629, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/opt/jumpserver/apps/deploy/tasks.py", line 27, in deployjenkins
+    for i in joblists:
+  File "/opt/py3/lib/python3.6/site-packages/jenkinsapi/jobs.py", line 94, in iteritems
+    for job in self.itervalues():
+  File "/opt/py3/lib/python3.6/site-packages/jenkinsapi/jobs.py", line 126, in itervalues
+    yield Job(row['url'], row['name'], self.jenkins)
+  File "/opt/py3/lib/python3.6/site-packages/jenkinsapi/job.py", line 68, in __init__
+    JenkinsBase.__init__(self, self.url)
+  File "/opt/py3/lib/python3.6/site-packages/jenkinsapi/jenkinsbase.py", line 35, in __init__
+    self.poll()
+  File "/opt/py3/lib/python3.6/site-packages/jenkinsapi/job.py", line 94, in poll
+    self._data = self._add_missing_builds(self._data)
+  File "/opt/py3/lib/python3.6/site-packages/jenkinsapi/job.py", line 120, in _add_missing_builds
+    response = self.poll(tree='allBuilds[number,url]')
+  File "/opt/py3/lib/python3.6/site-packages/jenkinsapi/job.py", line 92, in poll
+    data = super(Job, self).poll(tree=tree)
+  File "/opt/py3/lib/python3.6/site-packages/jenkinsapi/jenkinsbase.py", line 57, in poll
+    data = self._poll(tree=tree)
+  File "/opt/py3/lib/python3.6/site-packages/jenkinsapi/jenkinsbase.py", line 67, in _poll
+    return self.get_data(url, tree=tree)
+  File "/opt/py3/lib/python3.6/site-packages/jenkinsapi/jenkinsbase.py", line 77, in get_data
+    response = requester.get_url(url, params)
+  File "/opt/py3/lib/python3.6/site-packages/jenkinsapi/utils/requester.py", line 111, in get_url
+    return requests.get(self._update_url_scheme(url), **requestKwargs)
+  File "/opt/py3/lib/python3.6/site-packages/requests/api.py", line 72, in get
+    return request('get', url, params=params, **kwargs)
+  File "/opt/py3/lib/python3.6/site-packages/requests/api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/opt/py3/lib/python3.6/site-packages/requests/sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/opt/py3/lib/python3.6/site-packages/requests/sessions.py", line 618, in send
+    r = adapter.send(request, **kwargs)
+  File "/opt/py3/lib/python3.6/site-packages/requests/adapters.py", line 508, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='10.111.12.46', port=80): Max retries exceeded with url: /job/07_ttms-server_13_ttms-schedule-dev2/api/python?tree=allBuilds%5Bnumber%2Curl%5D (Caused by ReadTimeoutError("HTTPConnectionPool(host='10.111.12.46', port=80): Read timed out. (read timeout=10)",))
+Task deploy.tasks.deployjenkins[7117b138-aefa-4035-8117-c45e83d071de] raised unexpected: ConnectionError(MaxRetryError('HTTPConnectionPool(host=\'10.111.12.46\', port=80): Max retries exceeded with url: /job/07_ttms-server_13_ttms-schedule-dev2/api/python?tree=allBuilds%5Bnumber%2Curl%5D (Caused by ReadTimeoutError("HTTPConnectionPool(host=\'10.111.12.46\', port=80): Read timed out. (read timeout=10)",))',),)
+Traceback (most recent call last):
+  File "/opt/py3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 387, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 2, in raise_from
+  File "/opt/py3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 383, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/local/lib/python3.6/http/client.py", line 1331, in getresponse
+    response.begin()
+  File "/usr/local/lib/python3.6/http/client.py", line 297, in begin
+    version, status, reason = self._read_status()
+  File "/usr/local/lib/python3.6/http/client.py", line 258, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/local/lib/python3.6/socket.py", line 586, in readinto
+    return self._sock.recv_into(b)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/py3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 601, in urlopen
+    chunked=chunked)
+  File "/opt/py3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 389, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/opt/py3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 309, in _raise_timeout
+    raise ReadTimeoutError(self, url, "Read timed out. (read timeout=%s)" % timeout_value)
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='10.111.12.46', port=80): Read timed out. (read timeout=10)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/py3/lib/python3.6/site-packages/requests/adapters.py", line 440, in send
+    timeout=timeout
+  File "/opt/py3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 639, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/opt/py3/lib/python3.6/site-packages/urllib3/util/retry.py", line 388, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='10.111.12.46', port=80): Max retries exceeded with url: /job/07_ttms-server_13_ttms-schedule-dev2/api/python?tree=allBuilds%5Bnumber%2Curl%5D (Caused by ReadTimeoutError("HTTPConnectionPool(host='10.111.12.46', port=80): Read timed out. (read timeout=10)",))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/py3/lib/python3.6/site-packages/celery/app/trace.py", line 374, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/opt/py3/lib/python3.6/site-packages/celery/app/trace.py", line 629, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/opt/jumpserver/apps/deploy/tasks.py", line 27, in deployjenkins
+    for i in joblists:
+  File "/opt/py3/lib/python3.6/site-packages/jenkinsapi/jobs.py", line 94, in iteritems
+    for job in self.itervalues():
+  File "/opt/py3/lib/python3.6/site-packages/jenkinsapi/jobs.py", line 126, in itervalues
+    yield Job(row['url'], row['name'], self.jenkins)
+  File "/opt/py3/lib/python3.6/site-packages/jenkinsapi/job.py", line 68, in __init__
+    JenkinsBase.__init__(self, self.url)
+  File "/opt/py3/lib/python3.6/site-packages/jenkinsapi/jenkinsbase.py", line 35, in __init__
+    self.poll()
+  File "/opt/py3/lib/python3.6/site-packages/jenkinsapi/job.py", line 94, in poll
+    self._data = self._add_missing_builds(self._data)
+  File "/opt/py3/lib/python3.6/site-packages/jenkinsapi/job.py", line 120, in _add_missing_builds
+    response = self.poll(tree='allBuilds[number,url]')
+  File "/opt/py3/lib/python3.6/site-packages/jenkinsapi/job.py", line 92, in poll
+    data = super(Job, self).poll(tree=tree)
+  File "/opt/py3/lib/python3.6/site-packages/jenkinsapi/jenkinsbase.py", line 57, in poll
+    data = self._poll(tree=tree)
+  File "/opt/py3/lib/python3.6/site-packages/jenkinsapi/jenkinsbase.py", line 67, in _poll
+    return self.get_data(url, tree=tree)
+  File "/opt/py3/lib/python3.6/site-packages/jenkinsapi/jenkinsbase.py", line 77, in get_data
+    response = requester.get_url(url, params)
+  File "/opt/py3/lib/python3.6/site-packages/jenkinsapi/utils/requester.py", line 111, in get_url
+    return requests.get(self._update_url_scheme(url), **requestKwargs)
+  File "/opt/py3/lib/python3.6/site-packages/requests/api.py", line 72, in get
+    return request('get', url, params=params, **kwargs)
+  File "/opt/py3/lib/python3.6/site-packages/requests/api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/opt/py3/lib/python3.6/site-packages/requests/sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/opt/py3/lib/python3.6/site-packages/requests/sessions.py", line 618, in send
+    r = adapter.send(request, **kwargs)
+  File "/opt/py3/lib/python3.6/site-packages/requests/adapters.py", line 508, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='10.111.12.46', port=80): Max retries exceeded with url: /job/07_ttms-server_13_ttms-schedule-dev2/api/python?tree=allBuilds%5Bnumber%2Curl%5D (Caused by ReadTimeoutError("HTTPConnectionPool(host='10.111.12.46', port=80): Read timed out. (read timeout=10)",))
+Task deploy.tasks.deployjenkins[2c4b5dc5-26d7-4cbb-8ebb-6d468ac51948] raised unexpected: ConnectionError(MaxRetryError('HTTPConnectionPool(host=\'10.111.12.46\', port=80): Max retries exceeded with url: /job/07_ttms-server_13_ttms-schedule-dev2/api/python?tree=allBuilds%5Bnumber%2Curl%5D (Caused by ReadTimeoutError("HTTPConnectionPool(host=\'10.111.12.46\', port=80): Read timed out. (read timeout=10)",))',),)
+Traceback (most recent call last):
+  File "/opt/py3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 387, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 2, in raise_from
+  File "/opt/py3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 383, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/local/lib/python3.6/http/client.py", line 1331, in getresponse
+    response.begin()
+  File "/usr/local/lib/python3.6/http/client.py", line 297, in begin
+    version, status, reason = self._read_status()
+  File "/usr/local/lib/python3.6/http/client.py", line 258, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/local/lib/python3.6/socket.py", line 586, in readinto
+    return self._sock.recv_into(b)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/py3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 601, in urlopen
+    chunked=chunked)
+  File "/opt/py3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 389, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/opt/py3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 309, in _raise_timeout
+    raise ReadTimeoutError(self, url, "Read timed out. (read timeout=%s)" % timeout_value)
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='10.111.12.46', port=80): Read timed out. (read timeout=10)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/py3/lib/python3.6/site-packages/requests/adapters.py", line 440, in send
+    timeout=timeout
+  File "/opt/py3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 639, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/opt/py3/lib/python3.6/site-packages/urllib3/util/retry.py", line 388, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='10.111.12.46', port=80): Max retries exceeded with url: /job/07_ttms-server_13_ttms-schedule-dev2/api/python?tree=allBuilds%5Bnumber%2Curl%5D (Caused by ReadTimeoutError("HTTPConnectionPool(host='10.111.12.46', port=80): Read timed out. (read timeout=10)",))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/py3/lib/python3.6/site-packages/celery/app/trace.py", line 374, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/opt/py3/lib/python3.6/site-packages/celery/app/trace.py", line 629, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/opt/jumpserver/apps/deploy/tasks.py", line 27, in deployjenkins
+    for i in joblists:
+  File "/opt/py3/lib/python3.6/site-packages/jenkinsapi/jobs.py", line 94, in iteritems
+    for job in self.itervalues():
+  File "/opt/py3/lib/python3.6/site-packages/jenkinsapi/jobs.py", line 126, in itervalues
+    yield Job(row['url'], row['name'], self.jenkins)
+  File "/opt/py3/lib/python3.6/site-packages/jenkinsapi/job.py", line 68, in __init__
+    JenkinsBase.__init__(self, self.url)
+  File "/opt/py3/lib/python3.6/site-packages/jenkinsapi/jenkinsbase.py", line 35, in __init__
+    self.poll()
+  File "/opt/py3/lib/python3.6/site-packages/jenkinsapi/job.py", line 94, in poll
+    self._data = self._add_missing_builds(self._data)
+  File "/opt/py3/lib/python3.6/site-packages/jenkinsapi/job.py", line 120, in _add_missing_builds
+    response = self.poll(tree='allBuilds[number,url]')
+  File "/opt/py3/lib/python3.6/site-packages/jenkinsapi/job.py", line 92, in poll
+    data = super(Job, self).poll(tree=tree)
+  File "/opt/py3/lib/python3.6/site-packages/jenkinsapi/jenkinsbase.py", line 57, in poll
+    data = self._poll(tree=tree)
+  File "/opt/py3/lib/python3.6/site-packages/jenkinsapi/jenkinsbase.py", line 67, in _poll
+    return self.get_data(url, tree=tree)
+  File "/opt/py3/lib/python3.6/site-packages/jenkinsapi/jenkinsbase.py", line 77, in get_data
+    response = requester.get_url(url, params)
+  File "/opt/py3/lib/python3.6/site-packages/jenkinsapi/utils/requester.py", line 111, in get_url
+    return requests.get(self._update_url_scheme(url), **requestKwargs)
+  File "/opt/py3/lib/python3.6/site-packages/requests/api.py", line 72, in get
+    return request('get', url, params=params, **kwargs)
+  File "/opt/py3/lib/python3.6/site-packages/requests/api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/opt/py3/lib/python3.6/site-packages/requests/sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/opt/py3/lib/python3.6/site-packages/requests/sessions.py", line 618, in send
+    r = adapter.send(request, **kwargs)
+  File "/opt/py3/lib/python3.6/site-packages/requests/adapters.py", line 508, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='10.111.12.46', port=80): Max retries exceeded with url: /job/07_ttms-server_13_ttms-schedule-dev2/api/python?tree=allBuilds%5Bnumber%2Curl%5D (Caused by ReadTimeoutError("HTTPConnectionPool(host='10.111.12.46', port=80): Read timed out. (read timeout=10)",))
+Received task: dbaudits.tasks.mongoexecute[bc47b50c-6c96-442e-a4b5-9afc2dbe2fbc]  
+6101796b-c538-4188-b219-d900b8ca2e8a1111111111111
+Task dbaudits.tasks.mongoexecute[bc47b50c-6c96-442e-a4b5-9afc2dbe2fbc] succeeded in 0.06136327299464028s: None
+Received task: dbaudits.tasks.mongoexecute[9f2ad5ab-4064-46e6-87f4-ccaaa4ed4988]  
+6101796b-c538-4188-b219-d900b8ca2e8a1111111111111
+Task dbaudits.tasks.mongoexecute[9f2ad5ab-4064-46e6-87f4-ccaaa4ed4988] succeeded in 0.05022630500025116s: None
+Received task: dbaudits.tasks.mongoexecute[748d3b45-cddc-4f30-a3f7-2c0f70def71a]  
+6101796b-c538-4188-b219-d900b8ca2e8a1111111111111
+Task dbaudits.tasks.mongoexecute[748d3b45-cddc-4f30-a3f7-2c0f70def71a] succeeded in 0.04410332599945832s: None
+Received task: dbaudits.tasks.mongoexecute[2dd420f2-817b-4efa-bc32-62278d3fca09]  
+f187884c-23a7-475c-bbe4-f5f7e3f172ed1111111111111
+Task dbaudits.tasks.mongoexecute[2dd420f2-817b-4efa-bc32-62278d3fca09] succeeded in 0.002098967001074925s: None
+Received task: terminal.tasks.clean_orphan_session[a4704189-831e-499b-b65b-b1272460d1ed]  
+Task terminal.tasks.clean_orphan_session[a4704189-831e-499b-b65b-b1272460d1ed] succeeded in 0.03393683600006625s: None
+Connected to redis://127.0.0.1:6379/3
+mingle: searching for neighbors
+mingle: all alone
+celery@localhost.localdomain ready.
+Received task: users.tasks.check_password_expired_periodic[00119699-fe12-4457-b310-291ee9fad2db]  
+Received task: ops.tasks.create_or_update_registered_periodic_tasks[b43627d5-08eb-40f8-8cd3-94d55fa7d467]  
+Received task: terminal.tasks.delete_terminal_status_period[c654c9bb-c70d-4d11-a441-8d47b7190fa5]  
+Received task: terminal.tasks.clean_orphan_session[a51f0ec6-aa29-48be-b8ed-30e8de37b253]  
+Received task: terminal.tasks.clean_expired_session_period[04926bc6-f76d-4a70-a7fb-0530e498d56b]  
+Scaling up 1 processes.
+Task users.tasks.check_password_expired_periodic[00119699-fe12-4457-b310-291ee9fad2db] succeeded in 0.10911951400339603s: None
+Task terminal.tasks.clean_orphan_session[a51f0ec6-aa29-48be-b8ed-30e8de37b253] succeeded in 0.038911969008040614s: None
+Task terminal.tasks.delete_terminal_status_period[c654c9bb-c70d-4d11-a441-8d47b7190fa5] succeeded in 0.08098111698927823s: None
+04926bc6-f76d-4a70-a7fb-0530e498d56b terminal.tasks.clean_expired_session_period Start clean expired session record, commands and replay
+Task terminal.tasks.clean_expired_session_period[04926bc6-f76d-4a70-a7fb-0530e498d56b] succeeded in 0.04983238001295831s: None
+Task ops.tasks.create_or_update_registered_periodic_tasks[b43627d5-08eb-40f8-8cd3-94d55fa7d467] succeeded in 0.539678234999883s: None
+Received task: dbaudits.tasks.mongoexecute[880b51e5-463c-4188-9ef0-4228090e1152]  
+Scaling down 1 processes.
+6101796b-c538-4188-b219-d900b8ca2e8a1111111111111
+Task dbaudits.tasks.mongoexecute[880b51e5-463c-4188-9ef0-4228090e1152] succeeded in 0.04706868200446479s: None
+Received task: dbaudits.tasks.mongoexecute[6a2ed5dd-fbaf-44e9-8fd1-54a83ae11c6b]  
+d6a79ae8-9c22-4c6b-8a5b-3c4b45b088791111111111111
+Task dbaudits.tasks.mongoexecute[6a2ed5dd-fbaf-44e9-8fd1-54a83ae11c6b] succeeded in 0.046969192000688054s: None
+Connected to redis://127.0.0.1:6379/3
+mingle: searching for neighbors
+mingle: all alone
+celery@localhost.localdomain ready.
+Received task: users.tasks.check_password_expired_periodic[a0ca47ed-760d-4cf8-8270-1ea69209eb6e]  
+Received task: ops.tasks.create_or_update_registered_periodic_tasks[24902849-fc95-45ac-a3d1-bcd415d2f410]  
+Received task: terminal.tasks.delete_terminal_status_period[8ea1e4ac-e765-423b-a69d-904d684c9cb6]  
+Received task: terminal.tasks.clean_orphan_session[1f181e45-3261-4148-b30a-d5f2c78e4ee2]  
+Received task: terminal.tasks.clean_expired_session_period[523257dd-4c87-438b-be33-952b41b8864f]  
+Scaling up 1 processes.
+Task terminal.tasks.delete_terminal_status_period[8ea1e4ac-e765-423b-a69d-904d684c9cb6] succeeded in 0.035559805008233525s: None
+Task users.tasks.check_password_expired_periodic[a0ca47ed-760d-4cf8-8270-1ea69209eb6e] succeeded in 0.4682395329873543s: None
+523257dd-4c87-438b-be33-952b41b8864f terminal.tasks.clean_expired_session_period Start clean expired session record, commands and replay
+Task terminal.tasks.clean_expired_session_period[523257dd-4c87-438b-be33-952b41b8864f] succeeded in 0.04534014800447039s: None
+Task terminal.tasks.clean_orphan_session[1f181e45-3261-4148-b30a-d5f2c78e4ee2] succeeded in 0.05462966600316577s: None
+Received task: dbaudits.tasks.mongoexecute[86bd3bcd-47b2-4add-bbba-ca938b03b8b7]  
+Task ops.tasks.create_or_update_registered_periodic_tasks[24902849-fc95-45ac-a3d1-bcd415d2f410] succeeded in 0.9096119500027271s: None
+6101796b-c538-4188-b219-d900b8ca2e8a1111111111111
+Task dbaudits.tasks.mongoexecute[86bd3bcd-47b2-4add-bbba-ca938b03b8b7] succeeded in 0.016453730000648648s: None
+Connected to redis://127.0.0.1:6379/3
+mingle: searching for neighbors
+mingle: all alone
+celery@localhost.localdomain ready.
+Received task: users.tasks.check_password_expired_periodic[7364b945-8ed0-455d-9167-04dbfad2662f]  
+Received task: ops.tasks.create_or_update_registered_periodic_tasks[e9af017d-b0f1-4090-bdf9-d3d8f80915b6]  
+Received task: terminal.tasks.delete_terminal_status_period[6200349d-cadf-4ccd-8f80-562438f9a22f]  
+Received task: terminal.tasks.clean_orphan_session[7ae71a4b-fd23-4921-9fc4-946aa7fd9009]  
+Received task: terminal.tasks.clean_expired_session_period[b8c9995d-c39f-4b83-b16f-a81b4d242ac6]  
+Scaling up 1 processes.
+Task terminal.tasks.clean_orphan_session[7ae71a4b-fd23-4921-9fc4-946aa7fd9009] succeeded in 0.0825424770009704s: None
+Task terminal.tasks.delete_terminal_status_period[6200349d-cadf-4ccd-8f80-562438f9a22f] succeeded in 0.2179956170002697s: None
+Task users.tasks.check_password_expired_periodic[7364b945-8ed0-455d-9167-04dbfad2662f] succeeded in 0.41644219199952204s: None
+b8c9995d-c39f-4b83-b16f-a81b4d242ac6 terminal.tasks.clean_expired_session_period Start clean expired session record, commands and replay
+Task terminal.tasks.clean_expired_session_period[b8c9995d-c39f-4b83-b16f-a81b4d242ac6] succeeded in 0.27335020700411405s: None
+Task ops.tasks.create_or_update_registered_periodic_tasks[e9af017d-b0f1-4090-bdf9-d3d8f80915b6] succeeded in 1.32384956900205s: None
+Received task: dbaudits.tasks.mongoexecute[14f27e43-da20-4973-a7d1-7c5b8a920925]  
+6101796b-c538-4188-b219-d900b8ca2e8a1111111111111
+Task dbaudits.tasks.mongoexecute[14f27e43-da20-4973-a7d1-7c5b8a920925] succeeded in 0.06230949099699501s: None
+Received task: dbaudits.tasks.mongoexecute[b91b0dae-e454-4dff-a4ef-230221fe03c7]  
+d6a79ae8-9c22-4c6b-8a5b-3c4b45b088791111111111111
+Task dbaudits.tasks.mongoexecute[b91b0dae-e454-4dff-a4ef-230221fe03c7] succeeded in 0.05542521699680947s: None
+Connected to redis://127.0.0.1:6379/3
+mingle: searching for neighbors
+mingle: all alone
+celery@localhost.localdomain ready.
+Received task: users.tasks.check_password_expired_periodic[7fd72bbb-f1b8-436b-956f-4dd166ae1864]  
+Received task: ops.tasks.create_or_update_registered_periodic_tasks[7d0050f5-a113-41b6-948b-d89a575c0052]  
+Received task: terminal.tasks.delete_terminal_status_period[8d98849c-b2f5-476a-849c-fbaf7ba10c43]  
+Task terminal.tasks.delete_terminal_status_period[8d98849c-b2f5-476a-849c-fbaf7ba10c43] succeeded in 0.03852671600179747s: None
+Received task: terminal.tasks.clean_orphan_session[03e7fa86-f56b-4758-aad7-de987959bed0]  
+Received task: terminal.tasks.clean_expired_session_period[a9ee6e6c-b13f-4bd4-9fa6-e9b2ba3a960f]  
+a9ee6e6c-b13f-4bd4-9fa6-e9b2ba3a960f terminal.tasks.clean_expired_session_period Start clean expired session record, commands and replay
+Task users.tasks.check_password_expired_periodic[7fd72bbb-f1b8-436b-956f-4dd166ae1864] succeeded in 0.2079908009909559s: None
+Task terminal.tasks.clean_orphan_session[03e7fa86-f56b-4758-aad7-de987959bed0] succeeded in 0.08197952399495989s: None
+Task terminal.tasks.clean_expired_session_period[a9ee6e6c-b13f-4bd4-9fa6-e9b2ba3a960f] succeeded in 0.11459700099658221s: None
+Task ops.tasks.create_or_update_registered_periodic_tasks[7d0050f5-a113-41b6-948b-d89a575c0052] succeeded in 0.32668361499963794s: None
+Received task: dbaudits.tasks.mongoexecute[61953df1-f0bd-4851-a70b-47eb48c21009]  
+6101796b-c538-4188-b219-d900b8ca2e8a1111111111111
+Task dbaudits.tasks.mongoexecute[61953df1-f0bd-4851-a70b-47eb48c21009] succeeded in 0.046331858000485227s: None
+Connected to redis://127.0.0.1:6379/3
+mingle: searching for neighbors
+mingle: all alone
+celery@localhost.localdomain ready.
+Received task: users.tasks.check_password_expired_periodic[48e96144-ab46-4887-af1f-2ff975c052c9]  
+Received task: ops.tasks.create_or_update_registered_periodic_tasks[3c3efa6d-9ffe-4d8f-880c-7b58aa8b1639]  
+Received task: terminal.tasks.delete_terminal_status_period[f3ec10e6-5b73-4f01-bd7a-370e721746e9]  
+Received task: terminal.tasks.clean_orphan_session[ab8d4aa3-4d1b-44fe-9694-881fd4bab42d]  
+Task users.tasks.check_password_expired_periodic[48e96144-ab46-4887-af1f-2ff975c052c9] succeeded in 0.09630100100184791s: None
+Received task: terminal.tasks.clean_expired_session_period[c3f39212-2e57-42cd-855b-a5d19347453f]  
+c3f39212-2e57-42cd-855b-a5d19347453f terminal.tasks.clean_expired_session_period Start clean expired session record, commands and replay
+Task terminal.tasks.delete_terminal_status_period[f3ec10e6-5b73-4f01-bd7a-370e721746e9] succeeded in 0.03455525099707302s: None
+Task terminal.tasks.clean_orphan_session[ab8d4aa3-4d1b-44fe-9694-881fd4bab42d] succeeded in 0.039609761006431654s: None
+Task terminal.tasks.clean_expired_session_period[c3f39212-2e57-42cd-855b-a5d19347453f] succeeded in 0.030773115999181755s: None
+Task ops.tasks.create_or_update_registered_periodic_tasks[3c3efa6d-9ffe-4d8f-880c-7b58aa8b1639] succeeded in 0.4782713980093831s: None
+Received task: dbaudits.tasks.mongoexecute[78d353b5-9b11-4d97-a002-f2c65ed01f69]  
+6101796b-c538-4188-b219-d900b8ca2e8a1111111111111
+Task dbaudits.tasks.mongoexecute[78d353b5-9b11-4d97-a002-f2c65ed01f69] succeeded in 0.05565534300694708s: None
+Received task: dbaudits.tasks.mongoexecute[5c1dd51b-7269-402a-9339-1f5fe034f29a]  
+d6a79ae8-9c22-4c6b-8a5b-3c4b45b088791111111111111
+Task dbaudits.tasks.mongoexecute[5c1dd51b-7269-402a-9339-1f5fe034f29a] succeeded in 0.01557654098724015s: None
+Received task: dbaudits.tasks.mongoexecute[16c25b29-87f6-48c2-ac5a-790afe6c4161]  
+f187884c-23a7-475c-bbe4-f5f7e3f172ed1111111111111
+Task dbaudits.tasks.mongoexecute[16c25b29-87f6-48c2-ac5a-790afe6c4161] succeeded in 0.0016388280055252835s: None
+Received task: assets.tasks.test_admin_user_connectivity_period[fc9bafd7-4c63-4ca6-bc1c-ae9f99833d91]  
+Task assets.tasks.test_admin_user_connectivity_period[fc9bafd7-4c63-4ca6-bc1c-ae9f99833d91] succeeded in 0.010671679003280587s: None
+Connected to redis://127.0.0.1:6379/3
+mingle: searching for neighbors
+mingle: all alone
+celery@localhost.localdomain ready.
+Received task: users.tasks.check_password_expired_periodic[fefb4182-6b3d-4c52-aa55-88a375a9c1dd]  
+Received task: ops.tasks.create_or_update_registered_periodic_tasks[5d24e17b-4bf6-43c7-b075-d86c09e6612f]  
+Received task: terminal.tasks.delete_terminal_status_period[2bec05f5-9dfd-47ca-a140-cd714044655f]  
+Received task: terminal.tasks.clean_orphan_session[7175c00d-426a-480d-b0d7-e5ca3dbf2814]  
+Received task: terminal.tasks.clean_expired_session_period[80c73225-a1c4-4b61-b279-8bdb4ffe820c]  
+Scaling up 1 processes.
+Task terminal.tasks.delete_terminal_status_period[2bec05f5-9dfd-47ca-a140-cd714044655f] succeeded in 0.14614621001237538s: None
+Task users.tasks.check_password_expired_periodic[fefb4182-6b3d-4c52-aa55-88a375a9c1dd] succeeded in 0.2605904819938587s: None
+Task terminal.tasks.clean_orphan_session[7175c00d-426a-480d-b0d7-e5ca3dbf2814] succeeded in 0.020288180996431038s: None
+80c73225-a1c4-4b61-b279-8bdb4ffe820c terminal.tasks.clean_expired_session_period Start clean expired session record, commands and replay
+Task terminal.tasks.clean_expired_session_period[80c73225-a1c4-4b61-b279-8bdb4ffe820c] succeeded in 0.08312581499922089s: None
+Task ops.tasks.create_or_update_registered_periodic_tasks[5d24e17b-4bf6-43c7-b075-d86c09e6612f] succeeded in 0.4357723909924971s: None
+Received task: dbaudits.tasks.mongoexecute[e1d8a88d-bd2e-4bd4-b512-040ad7dd0f5c]  
+6101796b-c538-4188-b219-d900b8ca2e8a1111111111111
+Task dbaudits.tasks.mongoexecute[e1d8a88d-bd2e-4bd4-b512-040ad7dd0f5c] succeeded in 0.05007182800909504s: None
+Scaling down 1 processes.
+Received task: dbaudits.tasks.mongoexecute[cdf6e895-3f35-4f6a-be70-57193a7b1068]  
+6101796b-c538-4188-b219-d900b8ca2e8a1111111111111
+Task dbaudits.tasks.mongoexecute[cdf6e895-3f35-4f6a-be70-57193a7b1068] succeeded in 0.04533255299611483s: None
+Connected to redis://127.0.0.1:6379/3
+mingle: searching for neighbors
+mingle: all alone
+celery@localhost.localdomain ready.
+Received task: users.tasks.check_password_expired_periodic[ba2aaae5-5f68-4d20-80b5-b64544b46231]  
+Received task: ops.tasks.create_or_update_registered_periodic_tasks[c48f8e0d-1121-4e6d-aac3-0c2cfd2f9b76]  
+Received task: terminal.tasks.delete_terminal_status_period[5310ff45-5804-4180-930c-158da98a46a6]  
+Received task: terminal.tasks.clean_orphan_session[a8953222-48c1-4772-b239-d0b42572f224]  
+Received task: terminal.tasks.clean_expired_session_period[7af26288-77ad-4a14-abcb-d065c8bf88f9]  
+Scaling up 1 processes.
+Task terminal.tasks.delete_terminal_status_period[5310ff45-5804-4180-930c-158da98a46a6] succeeded in 0.12019574800797272s: None
+Task terminal.tasks.clean_orphan_session[a8953222-48c1-4772-b239-d0b42572f224] succeeded in 0.20981135999318212s: None
+Task users.tasks.check_password_expired_periodic[ba2aaae5-5f68-4d20-80b5-b64544b46231] succeeded in 0.2695384699909482s: None
+7af26288-77ad-4a14-abcb-d065c8bf88f9 terminal.tasks.clean_expired_session_period Start clean expired session record, commands and replay
+Task terminal.tasks.clean_expired_session_period[7af26288-77ad-4a14-abcb-d065c8bf88f9] succeeded in 0.13590055200620554s: None
+Task ops.tasks.create_or_update_registered_periodic_tasks[c48f8e0d-1121-4e6d-aac3-0c2cfd2f9b76] succeeded in 0.688371044001542s: None
+Received task: dbaudits.tasks.mongoexecute[76625a3f-5f8f-49a8-95f7-194789d0a10e]  
+6101796b-c538-4188-b219-d900b8ca2e8a1111111111111
+Task dbaudits.tasks.mongoexecute[76625a3f-5f8f-49a8-95f7-194789d0a10e] succeeded in 0.0032306520006386563s: None
+Scaling down 1 processes.
+Connected to redis://127.0.0.1:6379/3
+mingle: searching for neighbors
+mingle: all alone
+celery@localhost.localdomain ready.
+Received task: users.tasks.check_password_expired_periodic[1da4acb4-1872-4a28-be76-71fde531bf51]  
+Received task: ops.tasks.create_or_update_registered_periodic_tasks[eea7655a-1b8b-4fbd-b6e5-2d6fae13d1a9]  
+Received task: terminal.tasks.delete_terminal_status_period[cd2b1e92-cd8e-4dfa-b075-966ff2da4aaf]  
+Received task: terminal.tasks.clean_orphan_session[d9290f25-2019-418b-ad6c-c7dbb95d9f38]  
+Received task: terminal.tasks.clean_expired_session_period[6030c202-40f0-4fc2-b93a-69c2580f94b6]  
+Scaling up 1 processes.
+Task terminal.tasks.clean_orphan_session[d9290f25-2019-418b-ad6c-c7dbb95d9f38] succeeded in 0.09761792900098953s: None
+Task terminal.tasks.delete_terminal_status_period[cd2b1e92-cd8e-4dfa-b075-966ff2da4aaf] succeeded in 0.10306896100519225s: None
+Task users.tasks.check_password_expired_periodic[1da4acb4-1872-4a28-be76-71fde531bf51] succeeded in 0.41855311499966774s: None
+Task ops.tasks.create_or_update_registered_periodic_tasks[eea7655a-1b8b-4fbd-b6e5-2d6fae13d1a9] succeeded in 0.6434436010022182s: None
+6030c202-40f0-4fc2-b93a-69c2580f94b6 terminal.tasks.clean_expired_session_period Start clean expired session record, commands and replay
+Task terminal.tasks.clean_expired_session_period[6030c202-40f0-4fc2-b93a-69c2580f94b6] succeeded in 0.0656105529924389s: None
+Scaling down 1 processes.
+Connected to redis://127.0.0.1:6379/3
+mingle: searching for neighbors
+mingle: all alone
+celery@localhost.localdomain ready.
+Received task: users.tasks.check_password_expired_periodic[39e8efef-6383-4720-a1da-529b2369d50a]  
+Received task: ops.tasks.create_or_update_registered_periodic_tasks[9cb3484d-f91c-4860-900e-e600ef5e870b]  
+Received task: terminal.tasks.delete_terminal_status_period[f2ccc644-023e-4e93-945d-eb92203b9a23]  
+Received task: terminal.tasks.clean_orphan_session[7f735317-e149-4ad2-be8e-ff55d27fe575]  
+Received task: terminal.tasks.clean_expired_session_period[8f66e58b-abd2-401d-93ea-6f025feba095]  
+Scaling up 1 processes.
+Task terminal.tasks.clean_orphan_session[7f735317-e149-4ad2-be8e-ff55d27fe575] succeeded in 0.03933441900881007s: None
+Task terminal.tasks.delete_terminal_status_period[f2ccc644-023e-4e93-945d-eb92203b9a23] succeeded in 0.12400741899909917s: None
+Task users.tasks.check_password_expired_periodic[39e8efef-6383-4720-a1da-529b2369d50a] succeeded in 0.22363282198784873s: None
+Task ops.tasks.create_or_update_registered_periodic_tasks[9cb3484d-f91c-4860-900e-e600ef5e870b] succeeded in 0.32686471300257836s: None
+8f66e58b-abd2-401d-93ea-6f025feba095 terminal.tasks.clean_expired_session_period Start clean expired session record, commands and replay
+Task terminal.tasks.clean_expired_session_period[8f66e58b-abd2-401d-93ea-6f025feba095] succeeded in 0.03973898400727194s: None
+Scaling down 1 processes.
