@@ -3,6 +3,9 @@
 (py3) [root@localhost apps]# ./manage.py makemigrations dbaudits
 (py3) [root@localhost apps]# ./manage.py migrate
 
+pip install jenkinsapi
+pip install python-jenkins
+
 
 ## Jumpserver
 
